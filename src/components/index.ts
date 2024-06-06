@@ -1,0 +1,11 @@
+export { default as Button } from "./Button";
+export { default as CodeIcon } from "./CodeIcon";
+export { default as Contact } from "./Contact";
+export { default as Education } from "./Education";
+export { default as Experience } from "./Experience";
+export { default as Hero } from "./Hero";
+export { default as Input } from "./Input";
+export { default as Portfolio } from "./Portfolio";
+export { default as Skills } from "./Skills";
+export { default as TextArea } from "./TextArea";
+export { default as Header } from "./Header";
