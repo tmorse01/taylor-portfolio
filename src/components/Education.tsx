@@ -19,43 +19,23 @@ const Education = () => {
         <div className="grid items-start gap-8 mx-auto sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
           <div className="grid gap-1">
             <h3 className="text-lg font-bold">Bachelor's Degree</h3>
-            <p className="text-sm text-gray-200 ">
-              Computer Science, Western Washington University, 2018
+            <p className="text-sm text-gray-200">Computer Science</p>
+            <p className="text-sm text-gray-200">
+              Western Washington University - 2018
             </p>
           </div>
           <div className="grid gap-1">
-            <h3 className="text-lg font-bold">Online Courses</h3>
-            <p className="text-sm text-gray-200 ">
-              Completed various online courses on React, JavaScript, and web
-              development.
-            </p>
-          </div>
-          <div className="grid gap-1">
-            <h3 className="text-lg font-bold">Certifications</h3>
-            <p className="text-sm text-gray-200 ">
-              Obtained certifications in React, JavaScript, and CSS from
-              reputable online platforms.
-            </p>
-          </div>
-          <div className="grid gap-1">
-            <h3 className="text-lg font-bold">Bootcamp</h3>
-            <p className="text-sm text-gray-200 ">
-              Attended a 12-week intensive web development bootcamp, focusing on
-              front-end technologies.
-            </p>
-          </div>
-          <div className="grid gap-1">
-            <h3 className="text-lg font-bold">Workshops</h3>
-            <p className="text-sm text-gray-200 ">
-              Participated in various workshops and meetups to stay up-to-date
-              with the latest front-end trends and technologies.
+            <h3 className="text-lg font-bold">Online Cources</h3>
+            <p className="text-sm text-gray-200">
+              Taken various online courses on web development, including React,
+              Node.js, and more.
             </p>
           </div>
           <div className="grid gap-1">
             <h3 className="text-lg font-bold">Self-learning</h3>
-            <p className="text-sm text-gray-200 ">
-              Continuously learning and improving my skills through
-              self-directed study and personal projects.
+            <p className="text-sm text-gray-200">
+              Continuously enhancing my skills through self-directed study and
+              personal projects.
             </p>
           </div>
         </div>
