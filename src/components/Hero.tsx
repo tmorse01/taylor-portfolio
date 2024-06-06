@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -28,17 +28,19 @@ const Hero = () => {
             />
             <div className="space-x-4">
               <a
-                href="#"
-                className="inline-flex h-9 items-center justify-center rounded-md bg-[#0284C7] px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-[#0369A1] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#0EA5E9] disabled:pointer-events-none disabled:opacity-50"
+                href="/TaylorMorseResume.pdf"
+                className="inline-flex h-9 items-center justify-center rounded-md bg-[#F59E0B] px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-[#D97706] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#FBBF24] disabled:pointer-events-none disabled:opacity-50"
               >
-                Download CV
+                View Resume
               </a>
-              <a
-                href="#"
-                className="inline-flex h-9 items-center justify-center rounded-md border border-[#0EA5E9] bg-transparent px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#0EA5E9]/20 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#0EA5E9] disabled:pointer-events-none disabled:opacity-50"
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                className="inline-flex h-9 items-center justify-center rounded-md border border-white bg-transparent px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#FBBF24]/20 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#FBBF24] disabled:pointer-events-none disabled:opacity-50"
               >
                 Contact Me
-              </a>
+              </Link>
             </div>
           </div>
         </div>

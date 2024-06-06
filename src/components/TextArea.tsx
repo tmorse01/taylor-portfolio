@@ -1,5 +1,3 @@
-import React from "react";
-
 type TextAreaProps = {
   label?: string;
   placeholder?: string;

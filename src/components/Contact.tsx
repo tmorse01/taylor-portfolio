@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "./Button";
 import Input from "./Input";
 import TextArea from "./TextArea";
@@ -28,7 +27,7 @@ const Contact = () => {
             <TextArea placeholder="Message" />
             <Button
               type="submit"
-              className="w-full px-4 py-2 font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="w-full px-4 py-2 font-medium text-white bg-[#F59E0B] rounded-md hover:bg-[#D97706] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FBBF24]"
             >
               Submit
             </Button>
