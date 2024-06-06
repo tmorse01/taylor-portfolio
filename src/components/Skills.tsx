@@ -25,17 +25,10 @@ const Skills = () => {
             </p>
           </div>
           <div className="grid gap-1">
-            <h3 className="text-lg font-bold">JavaScript</h3>
-            <p className="text-sm text-gray-200 ">
-              Experienced in writing clean, efficient, and maintainable
-              JavaScript code.
-            </p>
-          </div>
-          <div className="grid gap-1">
             <h3 className="text-lg font-bold">TypeScript</h3>
             <p className="text-sm text-gray-200 ">
-              Experienced in using TypeScript to build scalable and maintainable
-              applications.
+              Experienced in writing clean, efficient, and maintainable
+              TypeScript code.
             </p>
           </div>
           <div className="grid gap-1">
@@ -57,6 +50,13 @@ const Skills = () => {
             <p className="text-sm text-gray-200 ">
               Experienced in building scalable and efficient server-side
               applications with Node.js.
+            </p>
+          </div>
+          <div className="grid gap-1">
+            <h3 className="text-lg font-bold">C#</h3>
+            <p className="text-sm text-gray-200">
+              Proficient in using .NET Entity Framework for efficient data
+              modeling and database interaction.
             </p>
           </div>
           <div className="grid gap-1">
