@@ -1,7 +1,7 @@
 type ButtonProps = {
   className?: string;
   type?: "button" | "submit" | "reset";
-  onClick?: () => void;
+  onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined;
   children: React.ReactNode;
 };
 
