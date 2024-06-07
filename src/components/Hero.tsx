@@ -11,7 +11,7 @@ const Hero = () => {
               Hi, I'm Taylor Morse
             </h1>
             <p className="mx-auto max-w-[700px] md:text-xl">
-              I'm a Full stack web developer passionate about creating
+              I'm a full stack web developer passionate about creating
               efficient, maintainable, and user-friendly web applications.
             </p>
             <p className="mx-auto max-w-[700px] md:text-xl">
