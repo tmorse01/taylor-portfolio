@@ -18,7 +18,7 @@ const Contact = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center gap-8">
           <LinkButton
             basic
             href="mailto:tmorse725@gmail.com"
