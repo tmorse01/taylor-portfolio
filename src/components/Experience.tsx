@@ -2,7 +2,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-12 text-white bg-gradient-to-r from-[#10B981] to-[#84CC16] md:py-24 lg:py-32"
+      className="py-12 bg-gradient-to-r md:py-24 lg:py-32"
     >
       <div className="container px-4 space-y-12 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -10,7 +10,7 @@ const Experience = () => {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
               My Experience
             </h2>
-            <p className="max-w-[900px] text-gray-200 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
+            <p className="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
               I have worked on a variety of projects, ranging from small
               startups to large enterprises.
             </p>
@@ -21,10 +21,8 @@ const Experience = () => {
             <h3 className="text-lg font-bold">
               Sr. Full Stack Developer at Builders Capital
             </h3>
-            <p className="text-sm text-gray-200 ">
-              Puyallup, WA | 03/24 - Present
-            </p>
-            <ul className="text-sm text-gray-200 list-disc list-inside">
+            <p className="text-sm ">Puyallup, WA | 03/24 - Present</p>
+            <ul className="text-sm list-disc list-inside">
               <li>
                 Lead the development of innovative web applications using HTML5,
                 React, JavaScript, and SASS, enhancing the front-end experience
@@ -52,10 +50,8 @@ const Experience = () => {
             <h3 className="text-lg font-bold">
               Software Developer II at Heritage Bank
             </h3>
-            <p className="text-sm text-gray-200 ">
-              Burlington, WA | 02/19 - 03/24
-            </p>
-            <ul className="text-sm text-gray-200 list-disc list-inside">
+            <p className="text-sm ">Burlington, WA | 02/19 - 03/24</p>
+            <ul className="text-sm list-disc list-inside">
               <li>
                 Optimized production bundle, reducing bundle size by 90%,
                 significantly enhancing application performance and user
@@ -82,20 +78,16 @@ const Experience = () => {
           <div className="grid gap-1">
             <h2 className="text-2xl font-bold">Side Projects</h2>
             <h3 className="text-lg font-bold">Formbox</h3>
-            <p className="text-sm text-gray-200 ">
-              React, Node.js, Mongodb, react-router
-            </p>
-            <ul className="text-sm text-gray-200 list-disc list-inside">
+            <p className="text-sm ">React, Node.js, Mongodb, react-router</p>
+            <ul className="text-sm list-disc list-inside">
               <li>
                 Created an application that enabled users to build dynamic
                 forms, share a link to collect responses, then view responses.
               </li>
             </ul>
             <h3 className="text-lg font-bold">Mob Unity</h3>
-            <p className="text-sm text-gray-200 ">
-              Next.js, Mongodb, React, TailwindCSS
-            </p>
-            <ul className="text-sm text-gray-200 list-disc list-inside">
+            <p className="text-sm ">Next.js, Mongodb, React, TailwindCSS</p>
+            <ul className="text-sm list-disc list-inside">
               <li>
                 Created an application for facilitating collaboration between
                 developers using a process known as mob development.
