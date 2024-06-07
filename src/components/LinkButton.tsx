@@ -12,7 +12,7 @@ const LinkButton: FC<LinkButtonProps> = ({
   ...props
 }) => {
   const baseStyles =
-    "inline-flex items-center justify-center px-4 py-2 text-sm font-medium transition-colors duration-300 rounded-md shadow h-9 focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50";
+    "inline-flex items-center justify-center px-4 py-2 text-sm font-medium transition-colors duration-300 rounded-lg shadow h-9 focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50";
 
   const primaryStyles =
     "text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 focus-visible:ring-purple-600";

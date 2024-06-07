@@ -20,7 +20,7 @@ const TextArea: React.FC<TextAreaProps> = ({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className="block w-full h-32 px-3 py-2 text-base text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md resize-none focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+        className="block w-full h-32 px-3 py-2 text-base text-gray-900 placeholder-gray-500 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
       />
     </div>
   );
