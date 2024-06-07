@@ -1,4 +1,4 @@
-import React, { AnchorHTMLAttributes, FC } from "react";
+import { AnchorHTMLAttributes, FC } from "react";
 
 interface LinkButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   primary?: boolean;

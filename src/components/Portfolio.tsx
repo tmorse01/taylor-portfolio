@@ -4,7 +4,7 @@ const Portfolio = () => {
   return (
     <div className="flex flex-col min-h-[100dvh] dark:bg-gray-800 dark:text-gray-50">
       <Header />
-      <main className="container flex-1 mx-auto">
+      <main className="flex-1">
         <Hero />
         <Skills />
         <Experience />
