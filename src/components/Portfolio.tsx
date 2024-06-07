@@ -1,4 +1,4 @@
-import { Header, Hero, Skills, Experience, Education, Contact } from "./index";
+import { Header, Hero, Skills, Experience, Projects, Contact } from "./index";
 
 const Portfolio = () => {
   return (
@@ -8,7 +8,7 @@ const Portfolio = () => {
         <Hero />
         <Skills />
         <Experience />
-        <Education />
+        <Projects />
         <Contact />
       </main>
     </div>
