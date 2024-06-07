@@ -1,6 +1,7 @@
-import Button from "./Button";
-import Input from "./Input";
-import TextArea from "./TextArea";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import LinkButton from "./LinkButton";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
@@ -17,15 +18,28 @@ const Contact = () => {
             </p>
           </div>
         </div>
-        <div className="w-full max-w-sm mx-auto space-y-2">
-          <form className="flex flex-col space-y-4">
-            <Input type="text" placeholder="Name" />
-            <Input type="email" placeholder="Email" />
-            <TextArea placeholder="Message" />
-            <Button primary type="submit" onClick={(e) => e.preventDefault()}>
-              Submit
-            </Button>
-          </form>
+        <div className="flex justify-center">
+          <LinkButton
+            basic
+            href="mailto:tmorse725@gmail.com"
+            icon={<FontAwesomeIcon icon={faEnvelope} />}
+          >
+            Email
+          </LinkButton>
+          <LinkButton
+            basic
+            href="https://www.linkedin.com/in/taylor-morse-86b294133/"
+            icon={<FontAwesomeIcon icon={faLinkedin} />}
+          >
+            LinkedIn
+          </LinkButton>
+          <LinkButton
+            basic
+            href="https://github.com/tmorse01"
+            icon={<FontAwesomeIcon icon={faGithub} />}
+          >
+            Github
+          </LinkButton>
         </div>
       </div>
     </section>

@@ -3,11 +3,13 @@ import { AnchorHTMLAttributes, FC } from "react";
 interface LinkButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   primary?: boolean;
   basic?: boolean;
+  icon?: JSX.Element;
 }
 
 const LinkButton: FC<LinkButtonProps> = ({
   primary,
   basic,
+  icon,
   children,
   ...props
 }) => {
@@ -23,6 +25,7 @@ const LinkButton: FC<LinkButtonProps> = ({
 
   return (
     <a className={`${baseStyles} ${linkStyles}`} {...props}>
+      {icon && <span className="mr-2">{icon}</span>}
       {children}
     </a>
   );
