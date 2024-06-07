@@ -1,5 +1,6 @@
-import { Link } from "react-scroll";
 import CodeIcon from "./CodeIcon";
+import Dropdown from "./Dropdown";
+import Nav from "./Nav";
 
 const Header = () => {
   return (
@@ -8,48 +9,20 @@ const Header = () => {
         <CodeIcon className="w-6 h-6" />
         <span className="sr-only">Portfolio</span>
       </a>
-      <nav className="flex gap-4 ml-auto sm:gap-6">
-        <Link
-          to="about"
-          smooth={true}
-          duration={500}
-          className="text-sm font-medium hover:underline underline-offset-4"
-        >
-          About
-        </Link>
-        <Link
-          to="skills"
-          smooth={true}
-          duration={500}
-          className="text-sm font-medium hover:underline underline-offset-4"
-        >
-          Skills
-        </Link>
-        <Link
-          to="experience"
-          smooth={true}
-          duration={500}
-          className="text-sm font-medium hover:underline underline-offset-4"
-        >
-          Experience
-        </Link>
-        <Link
-          to="education"
-          smooth={true}
-          duration={500}
-          className="text-sm font-medium hover:underline underline-offset-4"
-        >
-          Education
-        </Link>
-        <Link
-          to="contact"
-          smooth={true}
-          duration={500}
-          className="text-sm font-medium hover:underline underline-offset-4"
-        >
-          Contact
-        </Link>
-      </nav>
+      <div className="ml-auto lg:hidden">
+        <Dropdown
+          items={[
+            { text: "About", href: "about" },
+            { text: "Skills", href: "skills" },
+            { text: "Experience", href: "experience" },
+            { text: "Projects", href: "projects" },
+            { text: "Contact", href: "contact" },
+          ]}
+        />
+      </div>
+      <div className="hidden ml-auto lg:block">
+        <Nav />
+      </div>
     </header>
   );
 };

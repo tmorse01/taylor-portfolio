@@ -8,8 +8,8 @@ const Portfolio = () => {
       <main className="flex-1" id="top">
         <Hero />
         <Skills />
-        <Experience />
         <Projects />
+        <Experience />
         <Contact />
         <BackToTopButton />
       </main>

@@ -2,7 +2,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-12 bg-gradient-to-r md:py-24 lg:py-32"
+      className="py-12 bg-gray-200 md:py-24 lg:py-32 dark:bg-gray-900"
     >
       <div className="container px-4 mx-auto space-y-12 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
