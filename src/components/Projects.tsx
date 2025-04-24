@@ -36,7 +36,7 @@ const Projects = () => {
             technologies={[
               "React",
               "Node.js",
-              "Express.js",
+              "Netlify Serverless Functions",
               "Mantine UI",
               "MongoDB(Mongoose)",
               "Cloudinary",
