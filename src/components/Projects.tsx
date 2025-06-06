@@ -17,6 +17,21 @@ const Projects = () => {
         </div>
         <div className="grid items-start gap-8 mx-auto sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
           <ProjectCard
+            title="Pitch Site"
+            description="Created a React + Vite application that helps real estate investors generate AI-powered pitch deck websites with step-by-step forms and shareable previews."
+            technologies={[
+              "React",
+              "Vite",
+              "TypeScript",
+              "Mantine UI",
+              "Node.js",
+              "Express",
+              "Railway",
+            ]}
+            liveLink="https://pitchsite-client-production.up.railway.app/share/lXYUaM"
+            githubLinks={["https://github.com/tmorse01/pitchsite"]}
+          />
+          <ProjectCard
             title="Housing Market Trends"
             description="Created a web application that allows users to view and analyze housing market trends in the US."
             technologies={[
@@ -43,14 +58,6 @@ const Projects = () => {
             ]}
             liveLink="https://nw-builds.netlify.app/"
             githubLinks={["https://github.com/tmorse01/nw-builds"]}
-          />
-          <ProjectCard
-            title="Mob Unity"
-            description="Created an application for facilitating collaboration between
-                developers using a process known as mob development."
-            technologies={["Next.js", "MongoDB", "TailwindCSS", "DaisyUI"]}
-            liveLink="https://mob-unity.vercel.app/"
-            githubLinks={["https://github.com/tmorse01/mob-unity"]}
           />
         </div>
       </div>
