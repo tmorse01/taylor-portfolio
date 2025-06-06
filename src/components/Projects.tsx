@@ -18,7 +18,7 @@ const Projects = () => {
         <div className="grid items-start gap-8 mx-auto sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
           <ProjectCard
             title="Pitch Site"
-            description="Created a React + Vite application that helps real estate investors generate AI-powered pitch deck websites with step-by-step forms and shareable previews."
+            description="Developed a flashy, animated pitch deck generator that helps real estate investors create AI-powered, colorful presentations with step-by-step forms and shareable previews."
             technologies={[
               "React",
               "Vite",
