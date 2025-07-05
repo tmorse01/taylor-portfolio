@@ -7,3 +7,6 @@ export { default as Portfolio } from "./Portfolio";
 export { Skills } from "./Skills";
 export { default as TextArea } from "./TextArea";
 export { default as Header } from "./Header";
+export { default as TechIcons } from "./TechIcons";
+export { default as GridMotionBackground } from "./GridMotionBackground";
+export { default as SVGIcon } from "./SVGIcon";
