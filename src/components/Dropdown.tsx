@@ -29,7 +29,7 @@ const Dropdown: React.FC<DropdownProps> = ({ items }) => {
 
       {isOpen && (
         <div
-          className="absolute right-0 w-56 mt-2 origin-top-right bg-gray-100 rounded-md shadow-lg dark:bg-gray-900 ring-1 ring-black ring-opacity-5"
+          className="absolute right-0 z-50 w-56 mt-2 origin-top-right bg-gray-100 rounded-md shadow-lg dark:bg-gray-900 ring-1 ring-black ring-opacity-5"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="options-menu"

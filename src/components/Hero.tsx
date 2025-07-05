@@ -2,6 +2,7 @@ import LinkButton from "./LinkButton";
 import ScrollLinkButton from "./ScrollLink";
 import SplitText from "../animations/SplitText/SplitText";
 import ShinyText from "../animations/ShinyText/ShinyText";
+import TiltedCard from "./TiltedCard/TiltedCard";
 
 const Hero = () => {
   return (
@@ -33,14 +34,22 @@ const Hero = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col items-start space-y-4">
-            <img
-              src="/my-photo.jpg"
-              width="300"
-              height="300"
-              alt="Profile"
-              className="object-cover w-40 h-40 rounded-full"
-            />
+          <div className="flex flex-col items-start space-y-8">
+            <div className="w-64 h-64 mb-4">
+              <TiltedCard
+                imageSrc="/my-photo.jpg"
+                altText="Taylor Morse profile photo"
+                captionText="Taylor Morse"
+                containerHeight="250px"
+                containerWidth="250px"
+                imageHeight="250px"
+                imageWidth="250px"
+                rotateAmplitude={12}
+                scaleOnHover={1.2}
+                showMobileWarning={false}
+                showTooltip={true}
+              />
+            </div>
             <div className="space-x-4">
               <LinkButton primary href="/TaylorMorseResume.pdf" target="_blank">
                 View Resume
