@@ -4,6 +4,6 @@ export { default as Experience } from "./Experience";
 export { default as Hero } from "./Hero";
 export { default as Input } from "./Input";
 export { default as Portfolio } from "./Portfolio";
-export { default as Skills } from "./Skills";
+export { Skills } from "./Skills";
 export { default as TextArea } from "./TextArea";
 export { default as Header } from "./Header";

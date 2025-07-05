@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { baseStyles, primaryStyles } from "./Buttons/buttonStyles";
+import { baseStyles, primaryStyles } from "./buttonStyles";
 
 const BackToTopButton: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);

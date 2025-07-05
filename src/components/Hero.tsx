@@ -1,7 +1,6 @@
 import { LinkButton, ScrollLinkButton } from "./Buttons";
-import SplitText from "../animations/SplitText/SplitText";
-import ShinyText from "../animations/ShinyText/ShinyText";
-import TiltedCard from "./TiltedCard/TiltedCard";
+import { SplitText, ShinyText } from "../blocks/TextAnimations";
+import TiltedCard from "../blocks/Components/TiltedCard/TiltedCard";
 
 const Hero = () => {
   return (

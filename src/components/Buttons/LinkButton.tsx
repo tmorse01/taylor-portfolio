@@ -1,5 +1,5 @@
 import { AnchorHTMLAttributes, FC } from "react";
-import { baseStyles, getButtonStyles } from "./Buttons/buttonStyles";
+import { baseStyles, getButtonStyles } from "./buttonStyles";
 
 interface LinkButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   primary?: boolean;
