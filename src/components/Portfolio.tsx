@@ -1,4 +1,4 @@
-import BackToTopButton from "./BackToTopButton";
+import { BackToTopButton } from "./Buttons";
 import { Header, Hero, Skills, Experience, Projects, Contact } from "./index";
 
 const Portfolio = () => {

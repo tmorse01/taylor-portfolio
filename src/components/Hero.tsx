@@ -1,5 +1,4 @@
-import LinkButton from "./LinkButton";
-import ScrollLinkButton from "./ScrollLink";
+import { LinkButton, ScrollLinkButton } from "./Buttons";
 import SplitText from "../animations/SplitText/SplitText";
 import ShinyText from "../animations/ShinyText/ShinyText";
 import TiltedCard from "./TiltedCard/TiltedCard";
