@@ -6,6 +6,7 @@ interface ScrollLinkButtonProps extends LinkProps {
   children: React.ReactNode;
   primary?: boolean;
   basic?: boolean;
+  className?: string;
 }
 
 const ScrollLinkButton: FC<ScrollLinkButtonProps> = ({
@@ -13,13 +14,18 @@ const ScrollLinkButton: FC<ScrollLinkButtonProps> = ({
   basic,
   children,
   to = "#",
+  className = "",
   ...props
 }) => {
   const linkStyles = getButtonStyles(primary, basic);
 
   return (
     /* @ts-expect-error - react-scroll type mismatch*/
-    <ScrollLink to={to} className={`${baseStyles} ${linkStyles}`} {...props}>
+    <ScrollLink
+      to={to}
+      className={`${baseStyles} ${linkStyles} ${className}`}
+      {...props}
+    >
       {children}
     </ScrollLink>
   );
