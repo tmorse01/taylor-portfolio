@@ -4,7 +4,10 @@ import TiltedCard from "../blocks/Components/TiltedCard/TiltedCard";
 
 const Hero = () => {
   return (
-    <section id="about" className="py-12 md:py-24 lg:py-32">
+    <section
+      id="about"
+      className="min-h-screen flex items-center py-12 md:py-24 lg:py-32"
+    >
       <div className="container px-4 mx-auto space-y-12 md:px-6 xl:space-y-16">
         <div className="grid max-w-[1300px] mx-auto gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16">
           <div className="grid gap-4">

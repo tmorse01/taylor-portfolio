@@ -37,6 +37,9 @@ export const setupSkillCardAnimations = (
     once: true,
   });
 
+  // Make sure animations don't play if section is initially visible
+  ScrollTrigger.refresh();
+
   // Return cleanup function
   return () => {
     scrollTrigger.forEach((trigger) => trigger.kill());

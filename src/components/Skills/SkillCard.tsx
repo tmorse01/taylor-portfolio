@@ -10,7 +10,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ title, icon, description }) => {
   return (
     <SpotlightCard
       className="grid gap-2 p-4 transition-transform duration-300 transform hover:scale-105"
-      spotlightColor="rgba(255, 255, 255, 0.2)"
+      spotlightColor="rgba(56, 224, 231, 0.6)"
     >
       <h3 className="text-lg font-bold">{title}</h3>
       {icon}

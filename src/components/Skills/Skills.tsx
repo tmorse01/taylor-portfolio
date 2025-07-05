@@ -1,11 +1,12 @@
 // Import animation components
-import ScrollReveal from "../../blocks/TextAnimations/ScrollReveal/ScrollReveal";
+import ScrollFloat from "../../blocks/TextAnimations/ScrollFloat/ScrollFloat";
 import { useEffect, useRef } from "react";
 
 // Import local components and helpers
 import SkillCard from "./SkillCard";
 import { skillsData } from "./skillsData";
 import { setupSkillCardAnimations } from "./animationHelpers";
+import { ShinyText } from "../../blocks/TextAnimations";
 
 const Skills = () => {
   // Reference to the skills grid container for staggered animations
@@ -26,26 +27,24 @@ const Skills = () => {
       className="py-12 bg-gray-200 dark:bg-gray-900 md:py-24 lg:py-32"
     >
       <div className="container px-4 mx-auto space-y-12 md:px-6">
-        <div ref={headingRef}>
-          <ScrollReveal
+        <div ref={headingRef} className="space-y-4 text-center">
+          <ScrollFloat
             containerClassName="w-full"
-            textClassName="text-center"
-            baseOpacity={0}
-            enableBlur={true}
-            baseRotation={3}
+            textClassName="font-bold tracking-tighter text-4xl sm:text-6xl md:text-7xl mb-8"
+            animationDuration={1.5}
+            ease="back.inOut(2)"
+            scrollStart="top bottom-=10%"
+            scrollEnd="top center"
+            stagger={0.05}
           >
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  My Skills
-                </h2>
-                <p className="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I have a wide range of skills in web development, including
-                  React, Typescript, Node.js, Java, and more.
-                </p>
-              </div>
-            </div>
-          </ScrollReveal>
+            My Skills
+          </ScrollFloat>
+          <ShinyText
+            className="md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+            text=" I have a wide range of skills in web development, including React,
+            Typescript, Node.js, Java, and more."
+            speed={7}
+          />
         </div>
 
         <div

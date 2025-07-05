@@ -69,7 +69,7 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
           end: rotationEnd,
           scrub: true,
         },
-      },
+      }
     );
 
     const wordElements = el.querySelectorAll<HTMLElement>(".word");
@@ -88,7 +88,7 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
           end: wordAnimationEnd,
           scrub: true,
         },
-      },
+      }
     );
 
     if (enableBlur) {
@@ -106,7 +106,7 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
             end: wordAnimationEnd,
             scrub: true,
           },
-        },
+        }
       );
     }
 
