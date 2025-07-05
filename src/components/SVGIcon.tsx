@@ -46,7 +46,6 @@ const SVGIcon = ({
     // Then we use sepia and hue-rotate to shift to the desired color
     // Finally adjust saturation and brightness for better results
     filterString += filterString ? " " : "";
-    console.log("SVGIcon color:", color, color.startsWith("#"));
     // Different color treatment strategies based on the color
     if (color.startsWith("#")) {
       // For hex colors
@@ -67,7 +66,7 @@ const SVGIcon = ({
   if (filterString) {
     iconStyle.filter = filterString;
   }
-  console.log("SVGIcon style:", src, iconStyle);
+
   return <img src={src} alt={alt} className={className} style={iconStyle} />;
 };
 

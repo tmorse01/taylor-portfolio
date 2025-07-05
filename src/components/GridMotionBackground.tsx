@@ -9,7 +9,7 @@ interface GridMotionBackgroundProps {
 
 const GridMotionBackground: React.FC<GridMotionBackgroundProps> = ({
   gradientColor = "rgba(0, 0, 0, 0.7)",
-  iconSize = "medium",
+  iconSize = "large",
 }) => {
   // Get the tech icons array
   const techIconsArray = TechIcons({ size: iconSize });
