@@ -15,6 +15,7 @@ import {
   faLinux,
   faDigitalOcean,
 } from "@fortawesome/free-brands-svg-icons";
+import { faChartColumn } from "@fortawesome/free-solid-svg-icons";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 // Import custom SVG logos
@@ -63,7 +64,7 @@ export const techIconMap: Record<string, TechIconInfo> = {
   Stripe: { icon: faStripe, color: "text-blue-500" },
   Linux: { icon: faLinux, color: "text-yellow-400" },
   DigitalOcean: { icon: faDigitalOcean, color: "text-blue-300" },
-  Recharts: { icon: faReact, color: "text-blue-400" }, // Using React icon as placeholder
+  Recharts: { icon: faChartColumn, color: "text-blue-400" },
 
   // Custom SVG icons
   Azure: { icon: AzureIcon, color: "text-blue-500", isSVG: true },

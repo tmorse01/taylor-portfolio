@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import { ShinyText } from "../../blocks/TextAnimations";
 
 const Projects = () => {
   return (
@@ -9,13 +10,14 @@ const Projects = () => {
       <div className="container px-4 mx-auto space-y-12 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl">
+            <h3 className="mb-8 text-4xl font-bold tracking-tighter sm:text-6xl md:text-7xl">
               Projects
-            </h2>
-            <p className="max-w-[900px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
-              I have a strong educational background in computer science and web
-              development.
-            </p>
+            </h3>
+            <ShinyText
+              className="max-w-[900px] md:text-2xl/relaxed lg:text-xl/relaxed xl:text-2xl/relaxed"
+              text="Showcasing my expertise in modern web development with React, TypeScript, and full-stack technologies. These projects demonstrate my ability to create intuitive user experiences, implement complex data visualizations, and build scalable applications."
+              speed={7}
+            />
           </div>
         </div>
         <div className="grid items-stretch gap-10 mx-auto sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
