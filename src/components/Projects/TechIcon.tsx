@@ -41,9 +41,9 @@ const TechIcon: React.FC<TechIconProps> = ({ name }) => {
       </div>
 
       {showTooltip && (
-        <div className="absolute px-2 py-1 text-xs font-medium text-white transform -translate-x-1/2 -translate-y-1 bg-gray-900 rounded-md pointer-events-none bottom-full left-1/2 whitespace-nowrap">
+        <div className="absolute px-2 py-1 text-xs font-medium text-white transform -translate-x-1/2 -translate-y-1 bg-blue-900 border border-blue-700 rounded-md pointer-events-none shadow-glow bottom-full left-1/2 whitespace-nowrap">
           {name}
-          <div className="absolute transform -translate-x-1/2 border-4 border-transparent top-full left-1/2 border-t-gray-900"></div>
+          <div className="absolute transform -translate-x-1/2 border-4 border-transparent top-full left-1/2 border-t-blue-900"></div>
         </div>
       )}
     </div>
