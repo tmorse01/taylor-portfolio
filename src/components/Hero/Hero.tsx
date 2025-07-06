@@ -66,7 +66,7 @@ const Hero = () => {
                 primary
                 href="/TaylorMorseResume.pdf"
                 target="_blank"
-                className="px-8 py-4 text-lg lg:px-12 lg:py-6 lg:text-2xl"
+                className="px-8 py-4 text-xl h-[52px] lg:px-12 lg:py-6 lg:text-2xl lg:h-[68px]"
               >
                 View Resume
               </LinkButton>
@@ -75,7 +75,7 @@ const Hero = () => {
                 to="contact"
                 smooth={true}
                 duration={500}
-                className="px-8 py-4 text-lg lg:px-12 lg:py-6 lg:text-2xl"
+                className="px-8 py-4 text-xl h-[52px] lg:px-12 lg:py-6 lg:text-2xl lg:h-[68px]"
               >
                 Contact Me
               </ScrollLinkButton>
