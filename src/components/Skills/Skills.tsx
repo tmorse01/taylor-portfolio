@@ -1,5 +1,4 @@
 // Import animation components
-import ScrollFloat from "../../blocks/TextAnimations/ScrollFloat/ScrollFloat";
 import { useEffect, useRef } from "react";
 
 // Import local components and helpers
@@ -28,17 +27,10 @@ const Skills = () => {
     >
       <div className="container px-4 mx-auto space-y-12 md:px-6">
         <div ref={headingRef} className="space-y-4 text-center">
-          <ScrollFloat
-            containerClassName="w-full"
-            textClassName="font-bold tracking-tighter text-4xl sm:text-6xl md:text-7xl mb-8"
-            animationDuration={1.5}
-            ease="back.inOut(2)"
-            scrollStart="top bottom-=10%"
-            scrollEnd="top center"
-            stagger={0.05}
-          >
+          <h3 className="mb-8 text-4xl font-bold tracking-tighter sm:text-6xl md:text-7xl">
             My Skills
-          </ScrollFloat>
+          </h3>
+
           <ShinyText
             className="md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
             text=" I have a wide range of skills in web development, including React,

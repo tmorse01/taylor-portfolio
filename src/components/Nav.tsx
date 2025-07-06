@@ -7,7 +7,7 @@ export default function Nav() {
         to="about"
         smooth={true}
         duration={500}
-        className="text-sm font-medium hover:underline underline-offset-4"
+        className="text-base font-medium hover:underline underline-offset-4"
       >
         About
       </Link>
@@ -15,7 +15,7 @@ export default function Nav() {
         to="skills"
         smooth={true}
         duration={500}
-        className="text-sm font-medium hover:underline underline-offset-4"
+        className="text-base font-medium hover:underline underline-offset-4"
       >
         Skills
       </Link>
@@ -23,7 +23,7 @@ export default function Nav() {
         to="experience"
         smooth={true}
         duration={500}
-        className="text-sm font-medium hover:underline underline-offset-4"
+        className="text-base font-medium hover:underline underline-offset-4"
       >
         Experience
       </Link>
@@ -31,7 +31,7 @@ export default function Nav() {
         to="projects"
         smooth={true}
         duration={500}
-        className="text-sm font-medium hover:underline underline-offset-4"
+        className="text-base font-medium hover:underline underline-offset-4"
       >
         Projects
       </Link>
@@ -39,7 +39,7 @@ export default function Nav() {
         to="contact"
         smooth={true}
         duration={500}
-        className="text-sm font-medium hover:underline underline-offset-4"
+        className="text-base font-medium hover:underline underline-offset-4"
       >
         Contact
       </Link>

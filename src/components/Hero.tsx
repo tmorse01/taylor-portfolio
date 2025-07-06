@@ -58,7 +58,7 @@ const Hero = () => {
                 showTooltip={true}
               />
             </div>
-            <div className="space-x-4">
+            <div className="flex flex-col items-start space-y-4">
               <LinkButton
                 primary
                 href="/TaylorMorseResume.pdf"
