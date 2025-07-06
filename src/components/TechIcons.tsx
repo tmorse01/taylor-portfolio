@@ -75,9 +75,7 @@ const TechIcons = ({ size = "medium" }: TechIconsProps) => {
     }
   }
 
-  // Return only a subset of all icons to prevent overcrowding
-  // This is a simplified example - you might want to be more selective
-  return techIconElements.filter((_, index) => index % 3 === 0);
+  return techIconElements;
 };
 
 export default TechIcons;
