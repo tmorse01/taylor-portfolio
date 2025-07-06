@@ -10,3 +10,4 @@ export { default as Header } from "./Header/Header";
 export { default as TechIcons } from "./Hero/TechIcons";
 export { default as GridMotionBackground } from "./Hero/GridMotionBackground";
 export { default as SVGIcon } from "./Shared/SVGIcon";
+export { SectionHeader } from "./Shared";

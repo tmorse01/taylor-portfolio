@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import { ShinyText } from "../../blocks/TextAnimations";
+import { SectionHeader } from "../Shared";
 
 const Projects = () => {
   return (
@@ -8,18 +8,13 @@ const Projects = () => {
       className="py-12 md:py-24 lg:py-32 bg-gradient-to-b from-gray-900 to-black"
     >
       <div className="container px-4 mx-auto space-y-12 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <h3 className="mb-8 text-4xl font-bold tracking-tighter sm:text-6xl md:text-7xl">
-              Projects
-            </h3>
-            <ShinyText
-              className="max-w-[900px] md:text-2xl/relaxed lg:text-xl/relaxed xl:text-2xl/relaxed"
-              text="Showcasing my expertise in modern web development with React, TypeScript, and full-stack technologies. These projects demonstrate my ability to create intuitive user experiences, implement complex data visualizations, and build scalable applications."
-              speed={7}
-            />
-          </div>
-        </div>
+        <SectionHeader
+          title="Projects"
+          description="Showcasing my expertise in modern web development with React, TypeScript, and full-stack technologies. These projects demonstrate my ability to create intuitive user experiences, implement complex data visualizations, and build scalable applications."
+          useShinyText={true}
+          size="large"
+          fadeProps={{ duration: 800, threshold: 0.2 }}
+        />
         <div className="grid items-stretch gap-10 mx-auto sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
           <ProjectCard
             title="Pitch Site"

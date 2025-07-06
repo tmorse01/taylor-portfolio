@@ -5,12 +5,11 @@ import { useEffect, useRef } from "react";
 import SkillCard from "./SkillCard";
 import { skillsData } from "./skillsData";
 import { setupSkillCardAnimations } from "./animationHelpers";
-import { ShinyText } from "../../blocks/TextAnimations";
+import { SectionHeader } from "../Shared";
 
 const Skills = () => {
   // Reference to the skills grid container for staggered animations
   const skillsGridRef = useRef<HTMLDivElement>(null);
-  const headingRef = useRef<HTMLDivElement>(null);
 
   // Setup staggered animations for skill cards
   useEffect(() => {
@@ -26,18 +25,13 @@ const Skills = () => {
       className="py-12 bg-gray-200 dark:bg-gray-900 md:py-24 lg:py-32"
     >
       <div className="container px-4 mx-auto space-y-12 md:px-6">
-        <div ref={headingRef} className="space-y-4 text-center">
-          <h3 className="mb-8 text-4xl font-bold tracking-tighter sm:text-6xl md:text-7xl">
-            My Skills
-          </h3>
-
-          <ShinyText
-            className="md:text-2xl/relaxed lg:text-xl/relaxed xl:text-2xl/relaxed"
-            text=" I have a wide range of skills in web development, including React,
-            Typescript, Node.js, Java, and more."
-            speed={7}
-          />
-        </div>
+        <SectionHeader
+          title="My Skills"
+          description="I have a wide range of skills in web development, including React, Typescript, Node.js, Java, and more."
+          useShinyText={true}
+          size="large"
+          fadeProps={{ duration: 800, threshold: 0.2 }}
+        />
 
         <div
           ref={skillsGridRef}
