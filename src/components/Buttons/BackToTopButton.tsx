@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { baseStyles, primaryStyles } from "./buttonStyles";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { ghostButtonStyles } from "./buttonStyles";
 
 const BackToTopButton: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -20,20 +22,24 @@ const BackToTopButton: React.FC = () => {
     };
   }, []);
 
-  const positionStyles = "fixed bottom-4 right-4";
+  const positionStyles = "fixed bottom-6 right-6 z-50";
+  const buttonDimensions = "w-10 h-10 flex items-center justify-center";
 
   return (
-    <div>
-      {isVisible && (
-        <Link
-          to="top"
-          smooth={true}
-          duration={500}
-          className={`${baseStyles} ${primaryStyles} ${positionStyles}`}
-        >
-          Back to Top
-        </Link>
-      )}
+    <div
+      className={`transition-opacity duration-300 ${
+        isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
+      }`}
+    >
+      <Link
+        to="top"
+        smooth={true}
+        duration={500}
+        className={`${positionStyles} ${ghostButtonStyles} ${buttonDimensions} rounded-full`}
+        aria-label="Back to top"
+      >
+        <FontAwesomeIcon icon={faArrowUp} className="w-5 h-5" />
+      </Link>
     </div>
   );
 };

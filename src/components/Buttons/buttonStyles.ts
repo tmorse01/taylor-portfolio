@@ -11,6 +11,8 @@ export const primaryStyles =
 export const basicStyles =
   "text-blue-500 border-2 border-blue-500 hover:border-purple-600 hover:text-purple-600 hover:shadow-[0_0_15px_rgba(56,224,231,0.5)] focus-visible:ring-purple-600";
 
+export const ghostButtonStyles =
+  "bg-transparent border border-white/20 backdrop-blur-sm text-white/70 hover:bg-white/10 hover:border-white/60 hover:text-white hover:shadow-[0_0_15px_rgba(255,255,255,0.4)] transition-all duration-300";
 /**
  * Get the appropriate style based on variant
  */
