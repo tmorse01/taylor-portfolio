@@ -5,8 +5,6 @@ import {
   faAws,
   faGitAlt,
   faPython,
-  faCss3Alt,
-  faHtml5,
   faGithub,
   faDocker,
   faBootstrap,
