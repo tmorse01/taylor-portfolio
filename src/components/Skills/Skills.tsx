@@ -32,7 +32,7 @@ const Skills = () => {
           </h3>
 
           <ShinyText
-            className="md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+            className="md:text-2xl/relaxed lg:text-xl/relaxed xl:text-2xl/relaxed"
             text=" I have a wide range of skills in web development, including React,
             Typescript, Node.js, Java, and more."
             speed={7}
