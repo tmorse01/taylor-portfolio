@@ -84,6 +84,11 @@ export const techIconMap: Record<string, TechIconInfo> = {
   HeadlessUI: { icon: HeadlessUIIcon, color: "text-cyan-400", isSVG: true },
   "React-Query": { icon: ReactQueryIcon, color: "text-current", isSVG: true },
   Netlify: { icon: NetlifyIcon, color: "text-current", isSVG: true },
+  "Netlify Serverless Functions": {
+    icon: NetlifyIcon,
+    color: "text-current",
+    isSVG: true,
+  },
   Mongoose: { icon: MongoDbIcon, color: "text-current", isSVG: true },
   Cloudinary: { icon: CloudinaryIcon, color: "text-current", isSVG: true },
 };

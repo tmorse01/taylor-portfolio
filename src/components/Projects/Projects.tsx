@@ -54,7 +54,7 @@ const Projects = () => {
               "Node.js",
               "Netlify Serverless Functions",
               "Mantine UI",
-              "MongoDB(Mongoose)",
+              "Mongoose",
               "Cloudinary",
             ]}
             liveLink="https://nw-builds.netlify.app/"
