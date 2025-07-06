@@ -62,14 +62,14 @@ export const createSkillsEntryAnimation = (
 
   if (headingRef.current) {
     timeline
-      .from(headingRef.current.querySelector("h2"), {
+      .from(headingRef.current.querySelector(".skills-heading"), {
         y: 30,
         opacity: 0,
         duration: 0.6,
         ease: "power2.out",
       })
       .from(
-        headingRef.current.querySelector("p"),
+        headingRef.current.querySelector(".skills-subheading"),
         {
           y: 20,
           opacity: 0,

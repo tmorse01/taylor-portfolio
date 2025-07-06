@@ -11,31 +11,67 @@ import SVGIcon from "../SVGIcon";
 
 interface TechIconProps {
   name: string;
+  size?: "small" | "medium" | "large";
 }
 
-const TechIcon: React.FC<TechIconProps> = ({ name }) => {
+const TechIcon: React.FC<TechIconProps> = ({ name, size = "small" }) => {
   const [showTooltip, setShowTooltip] = useState(false);
 
   // Get the tech icon info from our shared utility
   const techInfo = getTechIconInfo(name);
+
+  // Define size classes based on the size prop
+  const getSizeClasses = () => {
+    switch (size) {
+      case "small":
+        return {
+          container: "w-8 h-8",
+          svg: "w-5 h-5",
+          icon: "text-xl",
+        };
+      case "medium":
+        return {
+          container: "w-12 h-12",
+          svg: "w-8 h-8",
+          icon: "text-3xl",
+        };
+      case "large":
+        return {
+          container: "w-16 h-16",
+          svg: "w-12 h-12",
+          icon: "text-5xl",
+        };
+      default:
+        return {
+          container: "w-8 h-8",
+          svg: "w-5 h-5",
+          icon: "text-xl",
+        };
+    }
+  };
+
+  const sizeClasses = getSizeClasses();
+
   return (
     <div
       className="relative group"
       onMouseEnter={() => setShowTooltip(true)}
       onMouseLeave={() => setShowTooltip(false)}
     >
-      <div className="flex items-center justify-center w-8 h-8 transition-transform duration-300 transform group-hover:scale-110">
+      <div
+        className={`flex items-center justify-center ${sizeClasses.container} transition-transform duration-300 transform group-hover:scale-110`}
+      >
         {techInfo.isSVG ? (
           <SVGIcon
             src={techInfo.icon as string}
             alt={name}
-            className="w-5 h-5"
+            className={sizeClasses.svg}
             color={getColorWithoutPrefix(techInfo.color)}
           />
         ) : (
           <FontAwesomeIcon
             icon={techInfo.icon as IconDefinition}
-            className={`text-xl ${techInfo.color}`}
+            className={`${sizeClasses.icon} ${techInfo.color}`}
           />
         )}
       </div>

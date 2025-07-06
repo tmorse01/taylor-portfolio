@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Poppins", "sans-serif"],
+        cabin: ["Cabin", "sans-serif"],
+      },
       keyframes: {
         shine: {
           "0%": { backgroundPosition: "100%" },

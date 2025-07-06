@@ -4,9 +4,7 @@ import {
   faNodeJs,
   faAws,
   faGitAlt,
-  faMicrosoft,
   faPython,
-  faJava,
   faCss3Alt,
   faHtml5,
   faGithub,
@@ -35,6 +33,12 @@ import ReactQueryIcon from "../assets/logos/react-query.svg";
 import NetlifyIcon from "../assets/logos/netlify.svg";
 import MongoDbIcon from "../assets/logos/mongodb.svg";
 import CloudinaryIcon from "../assets/logos/cloudinary.svg";
+import AzureIcon from "../assets/logos/azure.svg";
+import CSharpIcon from "../assets/logos/csharp.svg";
+import SQLIcon from "../assets/logos/sql.svg";
+import JavaIcon from "../assets/logos/java.svg";
+import CssIcon from "../assets/logos/css.svg";
+import HtmlIcon from "../assets/logos/html.svg";
 
 // Define the type for tech icon info
 export interface TechIconInfo {
@@ -51,16 +55,11 @@ export const techIconMap: Record<string, TechIconInfo> = {
   "Node.js": { icon: faNodeJs, color: "text-green-600" },
   AWS: { icon: faAws, color: "text-yellow-600" },
   Git: { icon: faGitAlt, color: "text-orange-600" },
-  Azure: { icon: faMicrosoft, color: "text-blue-500" },
   Python: { icon: faPython, color: "text-blue-300" },
-  Java: { icon: faJava, color: "text-orange-300" },
-  HTML: { icon: faHtml5, color: "text-orange-500" },
-  CSS: { icon: faCss3Alt, color: "text-blue-500" },
   GitHub: { icon: faGithub, color: "text-gray-600" },
   Docker: { icon: faDocker, color: "text-blue-600" },
   Bootstrap: { icon: faBootstrap, color: "text-purple-500" },
   Sass: { icon: faSass, color: "text-pink-500" },
-  SCSS: { icon: faSass, color: "text-pink-500" },
   npm: { icon: faNpm, color: "text-red-500" },
   Yarn: { icon: faYarn, color: "text-blue-400" },
   Stripe: { icon: faStripe, color: "text-blue-500" },
@@ -69,6 +68,7 @@ export const techIconMap: Record<string, TechIconInfo> = {
   Recharts: { icon: faReact, color: "text-blue-400" }, // Using React icon as placeholder
 
   // Custom SVG icons
+  Azure: { icon: AzureIcon, color: "text-blue-500", isSVG: true },
   Express: { icon: ExpressLogo, color: "text-gray-600", isSVG: true },
   TypeScript: { icon: TypeScriptLogo, color: "text-blue-600", isSVG: true },
   "Next.js": { icon: NextJSLogo, color: "text-gray-800", isSVG: true },
@@ -83,6 +83,11 @@ export const techIconMap: Record<string, TechIconInfo> = {
   Netlify: { icon: NetlifyIcon, color: "text-current", isSVG: true },
   Mongoose: { icon: MongoDbIcon, color: "text-current", isSVG: true },
   Cloudinary: { icon: CloudinaryIcon, color: "text-current", isSVG: true },
+  "C#": { icon: CSharpIcon, color: "text-current", isSVG: true },
+  SQL: { icon: SQLIcon, color: "text-current", isSVG: true },
+  Java: { icon: JavaIcon, color: "text-current", isSVG: true },
+  CSS: { icon: CssIcon, color: "text-current", isSVG: true },
+  HTML: { icon: HtmlIcon, color: "text-current", isSVG: true },
 };
 
 // Helper function to get icon info for a tech name

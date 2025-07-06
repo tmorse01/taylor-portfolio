@@ -1,20 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
-import {
-  faCss3Alt,
-  faHtml5,
-  faNodeJs,
-  faGitAlt,
-  faMicrosoft,
-  faAws,
-  faPython,
-  faJava,
-  faJsSquare,
-  faEnvira,
-} from "@fortawesome/free-brands-svg-icons";
-import { faDatabase, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import TechIcon from "../Projects/TechIcon";
 
 export interface SkillData {
   title: string;
@@ -22,85 +7,89 @@ export interface SkillData {
   description: string;
 }
 
-// Function to create skill data with icon
-const createSkillWithIcon = (
+// Function to create skill data with tech icon name
+const createSkillWithTechIcon = (
   title: string,
-  icon: IconDefinition,
+  iconName: string,
   description: string
 ): SkillData => {
   return {
     title,
-    icon: <FontAwesomeIcon icon={icon} size="3x" />,
+    icon: (
+      <div className="flex justify-center">
+        <TechIcon name={iconName} size="large" />
+      </div>
+    ),
     description,
   };
 };
 
 // Skills data
 export const skillsData: SkillData[] = [
-  createSkillWithIcon(
+  createSkillWithTechIcon(
     "React",
-    faReact,
+    "React",
     "Senior level React developer with experience in building complex web applcations."
   ),
-  createSkillWithIcon(
+  createSkillWithTechIcon(
     "TypeScript",
-    faJsSquare,
+    "TypeScript",
     "Proficient in writing clean and maintainable code with TypeScript."
   ),
-  createSkillWithIcon(
+  createSkillWithTechIcon(
     "CSS",
-    faCss3Alt,
+    "CSS",
     "Expert in styling with modern CSS techniques such as responsive design, theming, and tailwind."
   ),
-  createSkillWithIcon(
+  createSkillWithTechIcon(
     "HTML",
-    faHtml5,
+    "HTML",
     "Understands the fundamentals of HTML and semantic markup."
   ),
-  createSkillWithIcon(
+  createSkillWithTechIcon(
     "Node.js",
-    faNodeJs,
+    "Node.js",
     "Experienced in standing up quick, fast and scalable server-side applications with Node.js."
   ),
-  createSkillWithIcon(
+  createSkillWithTechIcon(
     "C#",
-    faLaptopCode,
+    "C#",
     "Capable of using .NET Entity Framework for efficient data modeling and database interaction."
   ),
-  createSkillWithIcon(
+  createSkillWithTechIcon(
     "Java",
-    faJava,
+    "Java",
     "Skilled in creating and maintaining reliable servers with Java."
   ),
-  createSkillWithIcon(
+  createSkillWithTechIcon(
     "Python",
-    faPython,
+    "Python",
     "Versatile in writing efficient Python code for a variety of projects such as data analysis, web scraping, and automation."
   ),
-  createSkillWithIcon(
+  createSkillWithTechIcon(
     "SQL",
-    faDatabase,
+    "SQL",
     "Knowledgable in crafting complex SQL queries and managing relational databases."
   ),
-  createSkillWithIcon(
+  createSkillWithTechIcon(
     "MongoDB",
-    faEnvira,
+    "MongoDB",
     "Experienced using NoSQL databases with MongoDB for scalable and fast data storage."
   ),
   {
     title: "Azure / AWS",
     icon: (
-      <div className="flex gap-2">
-        <FontAwesomeIcon icon={faMicrosoft} size="3x" />
-        <FontAwesomeIcon icon={faAws} size="3x" />
+      <div className="flex justify-center gap-4">
+        <TechIcon name="Azure" size="large" />
+        <TechIcon name="AWS" size="large" />
       </div>
     ),
     description:
       "Familiarity using Azure and AWS platforms for devops and cloud computing.",
   },
-  createSkillWithIcon(
+  createSkillWithTechIcon(
     "Git",
-    faGitAlt,
+    "Git",
     "Excellent version control and team collaboration using Git."
   ),
 ];
