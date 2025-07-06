@@ -32,7 +32,7 @@ import ReactQueryIcon from "../assets/logos/react-query.svg";
 import NetlifyIcon from "../assets/logos/netlify.svg";
 import MongoDbIcon from "../assets/logos/mongodb.svg";
 import CloudinaryIcon from "../assets/logos/cloudinary.svg";
-import AzureIcon from "../assets/logos/azure.svg";
+import AzureIcon from "../assets/logos/Azure.svg";
 import CSharpIcon from "../assets/logos/csharp.svg";
 import SQLIcon from "../assets/logos/sql.svg";
 import JavaIcon from "../assets/logos/java.svg";
