@@ -31,7 +31,7 @@ const Hero = () => {
             </div>
             <div className="mx-auto max-w-[700px] text-2xl md:text-3xl">
               <ShinyText
-                text="I'm a full stack web developer passionate about creating efficient, maintainable, and user-friendly web applications."
+                text="I'm a senior full stack web developer passionate about creating efficient, maintainable, and user-friendly web applications."
                 speed={7}
               />
             </div>
