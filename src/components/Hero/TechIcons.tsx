@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import SVGIcon from "./SVGIcon";
-import { techIconMap } from "../utils/techIconsMap";
+import SVGIcon from "../Shared/SVGIcon";
+import { techIconMap } from "../../utils/techIconsMap";
 
 export interface TechIconsProps {
   size?: "small" | "medium" | "large";

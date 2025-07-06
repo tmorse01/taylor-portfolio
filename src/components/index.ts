@@ -1,12 +1,12 @@
 export { default as Contact } from "./Contact";
 export { default as Projects } from "./Projects/Projects";
-export { default as Experience } from "./Experience";
-export { default as Hero } from "./Hero";
+export { default as Experience } from "./Experience/Experience";
+export { default as Hero } from "./Hero/Hero";
 export { default as Input } from "./Input";
 export { default as Portfolio } from "./Portfolio";
 export { Skills } from "./Skills";
 export { default as TextArea } from "./TextArea";
-export { default as Header } from "./Header";
-export { default as TechIcons } from "./TechIcons";
-export { default as GridMotionBackground } from "./GridMotionBackground";
-export { default as SVGIcon } from "./SVGIcon";
+export { default as Header } from "./Header/Header";
+export { default as TechIcons } from "./Hero/TechIcons";
+export { default as GridMotionBackground } from "./Hero/GridMotionBackground";
+export { default as SVGIcon } from "./Shared/SVGIcon";

@@ -7,7 +7,7 @@ import {
 } from "../../utils/techIconsMap";
 
 // Import the SVGIcon component
-import SVGIcon from "../SVGIcon";
+import SVGIcon from "../Shared/SVGIcon";
 
 interface TechIconProps {
   name: string;

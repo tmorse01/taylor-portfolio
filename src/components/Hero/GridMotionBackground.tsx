@@ -1,5 +1,5 @@
 import React from "react";
-import GridMotion from "../blocks/Backgrounds/GridMotion/GridMotion";
+import GridMotion from "../../blocks/Backgrounds/GridMotion/GridMotion";
 import TechIcons, { TechIconsProps } from "./TechIcons";
 
 interface GridMotionBackgroundProps {

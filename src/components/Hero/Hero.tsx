@@ -1,6 +1,6 @@
-import { LinkButton, ScrollLinkButton } from "./Buttons";
-import { SplitText, ShinyText } from "../blocks/TextAnimations";
-import TiltedCard from "../blocks/Components/TiltedCard/TiltedCard";
+import { LinkButton, ScrollLinkButton } from "../Buttons";
+import { SplitText, ShinyText } from "../../blocks/TextAnimations";
+import TiltedCard from "../../blocks/Components/TiltedCard/TiltedCard";
 import GridMotionBackground from "./GridMotionBackground";
 
 const Hero = () => {
