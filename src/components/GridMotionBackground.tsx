@@ -13,7 +13,7 @@ const GridMotionBackground: React.FC<GridMotionBackgroundProps> = ({
 }) => {
   // Get the tech icons array
   const techIconsArray = TechIcons({ size: iconSize });
-  console.log("Tech Icons Array:", techIconsArray);
+
   return (
     <div className="absolute inset-0 z-0 overflow-hidden">
       <GridMotion items={techIconsArray} gradientColor={gradientColor} />

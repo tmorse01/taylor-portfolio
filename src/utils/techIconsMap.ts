@@ -64,7 +64,7 @@ export const techIconMap: Record<string, TechIconInfo> = {
   npm: { icon: faNpm, color: "text-red-500" },
   Yarn: { icon: faYarn, color: "text-blue-400" },
   Stripe: { icon: faStripe, color: "text-blue-500" },
-  Linux: { icon: faLinux, color: "text-gray-700" },
+  Linux: { icon: faLinux, color: "text-yellow-400" },
   DigitalOcean: { icon: faDigitalOcean, color: "text-blue-300" },
   Recharts: { icon: faReact, color: "text-blue-400" }, // Using React icon as placeholder
 
