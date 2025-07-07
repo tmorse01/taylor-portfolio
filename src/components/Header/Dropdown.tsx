@@ -22,14 +22,15 @@ const Dropdown: React.FC<DropdownProps> = ({ items }) => {
           aria-haspopup="true"
           aria-expanded="true"
           onClick={toggleDropdown}
+          className="p-2 transition-colors duration-300 border rounded-full bg-white/5 backdrop-blur-sm hover:bg-white/10 border-white/10"
         >
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon={faBars} className="text-white" />
         </Button>
       </div>
 
       {isOpen && (
         <div
-          className="absolute right-0 z-50 w-56 mt-2 origin-top-right bg-gray-100 rounded-md shadow-lg dark:bg-gray-900 ring-1 ring-black ring-opacity-5"
+          className="absolute right-0 z-50 w-56 mt-2 origin-top-right border rounded-lg shadow-xl backdrop-blur-md bg-white/10 border-white/20"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="options-menu"
@@ -39,8 +40,10 @@ const Dropdown: React.FC<DropdownProps> = ({ items }) => {
               <Link
                 key={index}
                 to={item.href}
-                className="block w-full px-4 py-2 text-sm text-left text-blue-500 hover:text-purple-600 focus:bg-purple-200"
+                className="block w-full px-4 py-3 text-sm text-left text-white transition-colors duration-300 hover:bg-white/10 focus:bg-white/20 first:rounded-t-lg last:rounded-b-lg"
                 role="menuitem"
+                smooth={true}
+                duration={500}
                 onClick={toggleDropdown}
               >
                 {item.text}

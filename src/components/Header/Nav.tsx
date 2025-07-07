@@ -7,41 +7,56 @@ export default function Nav() {
         to="about"
         smooth={true}
         duration={500}
-        className="text-base font-medium hover:underline underline-offset-4"
+        className="relative px-3 py-1 font-medium text-white transition-all duration-300 group"
+        activeClass="after:w-full text-blue-100"
       >
-        About
+        <span className="relative z-10">About</span>
+        <span className="absolute inset-0 transition-all duration-300 rounded-lg bg-white/0 group-hover:bg-white/10"></span>
+        <span className="absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 w-0 bg-blue-200 group-hover:w-full transition-all duration-300"></span>
       </Link>
       <Link
         to="skills"
         smooth={true}
         duration={500}
-        className="text-base font-medium hover:underline underline-offset-4"
+        className="relative px-3 py-1 font-medium text-white transition-all duration-300 group"
+        activeClass="after:w-full text-blue-100"
       >
-        Skills
+        <span className="relative z-10">Skills</span>
+        <span className="absolute inset-0 transition-all duration-300 rounded-lg bg-white/0 group-hover:bg-white/10"></span>
+        <span className="absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 w-0 bg-blue-200 group-hover:w-full transition-all duration-300"></span>
       </Link>
       <Link
         to="experience"
         smooth={true}
         duration={500}
-        className="text-base font-medium hover:underline underline-offset-4"
+        className="relative px-3 py-1 font-medium text-white transition-all duration-300 group"
+        activeClass="after:w-full text-blue-100"
       >
-        Experience
+        <span className="relative z-10">Experience</span>
+        <span className="absolute inset-0 transition-all duration-300 rounded-lg bg-white/0 group-hover:bg-white/10"></span>
+        <span className="absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 w-0 bg-blue-200 group-hover:w-full transition-all duration-300"></span>
       </Link>
       <Link
         to="projects"
         smooth={true}
         duration={500}
-        className="text-base font-medium hover:underline underline-offset-4"
+        className="relative px-3 py-1 font-medium text-white transition-all duration-300 group"
+        activeClass="after:w-full text-blue-100"
       >
-        Projects
+        <span className="relative z-10">Projects</span>
+        <span className="absolute inset-0 transition-all duration-300 rounded-lg bg-white/0 group-hover:bg-white/10"></span>
+        <span className="absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 w-0 bg-blue-200 group-hover:w-full transition-all duration-300"></span>
       </Link>
       <Link
         to="contact"
         smooth={true}
         duration={500}
-        className="text-base font-medium hover:underline underline-offset-4"
+        className="relative px-3 py-1 font-medium text-white transition-all duration-300 group"
+        activeClass="after:w-full text-blue-100"
       >
-        Contact
+        <span className="relative z-10">Contact</span>
+        <span className="absolute inset-0 transition-all duration-300 rounded-lg bg-white/0 group-hover:bg-white/10"></span>
+        <span className="absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 w-0 bg-blue-200 group-hover:w-full transition-all duration-300"></span>
       </Link>
     </nav>
   );

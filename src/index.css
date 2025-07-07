@@ -6,3 +6,21 @@
   --font-cabin: "Cabin";
   --font-poppins: "Poppins";
 }
+
+@layer components {
+  header {
+    position: fixed !important;
+    width: 100%;
+  }
+}
+
+@layer utilities {
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .drop-shadow-glow {
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.5));
+  }
+}
