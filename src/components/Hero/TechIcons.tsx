@@ -56,7 +56,7 @@ const TechIcons = ({ size = "medium" }: TechIconsProps) => {
           <SVGIcon
             src={techInfo.icon as string}
             alt={name}
-            className="w-full h-full p-2"
+            className="w-full h-full"
           />
         </div>
       );
