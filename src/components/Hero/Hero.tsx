@@ -1,5 +1,5 @@
 import { LinkButton, ScrollLinkButton } from "../Buttons";
-import { SplitText, ShinyText } from "../../blocks/TextAnimations";
+import { SplitText, FadeIn } from "../../blocks/TextAnimations";
 import TiltedCard from "../../blocks/Components/TiltedCard/TiltedCard";
 import GridMotionBackground from "./GridMotionBackground";
 
@@ -31,17 +31,22 @@ const Hero = () => {
                   textAlign="left"
                 />
               </div>
-              <div className="mx-auto max-w-[700px] text-2xl md:text-3xl mt-4">
-                <ShinyText
-                  text="I'm a senior full stack web developer passionate about creating efficient, maintainable, and user-friendly web applications."
-                  speed={7}
-                />
-              </div>
-              <div className="mx-auto max-w-[700px] text-2xl md:text-3xl mt-4">
-                <ShinyText
-                  text="I enjoy tackling complex problems and automating business processes."
-                  speed={6}
-                />
+              <div className="mx-auto max-w-[700px] text-xl md:text-2xl mt-4">
+                <FadeIn delay={300} duration={1200}>
+                  <p className="mb-4">
+                    Senior full stack developer specializing in React and
+                    TypeScript, with a passion for building high-impact tools in
+                    finance, real estate, and enterprise software.
+                  </p>
+                </FadeIn>
+
+                <FadeIn delay={800} duration={1200}>
+                  <p>
+                    I combine clean design, performance-focused architecture,
+                    and strong communication to deliver user-friendly, scalable
+                    applications that solve real business problems.
+                  </p>
+                </FadeIn>
               </div>
             </div>
           </div>
