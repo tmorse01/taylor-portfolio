@@ -41,24 +41,26 @@ const Projects = () => {
               "Recharts",
               "D3",
               "React-Query",
-              "TailwindCSS",
+              "Tailwind",
             ]}
             liveLink="https://housing-market-trends.netlify.app/"
             githubLinks={["https://github.com/tmorse01/housing-visualizations"]}
+            videoUrl="/demos/HousingMarketTrends.mp4"
           />
           <ProjectCard
-            title="NW Builds"
-            description="Created a web application to showcase builds from one of my favorite online MMORPG games, New World."
+            title="Boggle Bolt"
+            description="Built a fast-paced React implementation of the classic Boggle word game with intelligent DFS algorithms, Trie-optimized word validation, and real-time path visualization featuring electric animations and comprehensive game statistics."
             technologies={[
               "React",
-              "Node.js",
-              "Netlify Serverless Functions",
-              "Mantine UI",
-              "Mongoose",
-              "Cloudinary",
+              "TypeScript",
+              "Tailwind",
+              "Vite",
+              "DFS Algorithms",
+              "Trie Data Structure",
             ]}
-            liveLink="https://nw-builds.netlify.app/"
-            githubLinks={["https://github.com/tmorse01/nw-builds"]}
+            liveLink="https://taylor-boggle.netlify.app/"
+            githubLinks={["https://github.com/tmorse01/boggle-game"]}
+            videoUrl="/demos/Boggle.mp4"
           />
         </div>
       </div>

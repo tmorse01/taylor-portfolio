@@ -15,7 +15,11 @@ import {
   faLinux,
   faDigitalOcean,
 } from "@fortawesome/free-brands-svg-icons";
-import { faChartColumn } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChartColumn,
+  faProjectDiagram,
+  faSitemap,
+} from "@fortawesome/free-solid-svg-icons";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 // Import custom SVG logos
@@ -65,6 +69,8 @@ export const techIconMap: Record<string, TechIconInfo> = {
   Linux: { icon: faLinux, color: "text-yellow-400" },
   DigitalOcean: { icon: faDigitalOcean, color: "text-blue-300" },
   Recharts: { icon: faChartColumn, color: "text-blue-400" },
+  "DFS Algorithms": { icon: faProjectDiagram, color: "text-purple-500" },
+  "Trie Data Structure": { icon: faSitemap, color: "text-green-500" },
 
   // Custom SVG icons
   Azure: { icon: AzureIcon, color: "text-blue-500", isSVG: true },
