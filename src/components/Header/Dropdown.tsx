@@ -30,7 +30,7 @@ const Dropdown: React.FC<DropdownProps> = ({ items }) => {
 
       {isOpen && (
         <div
-          className="absolute right-0 z-50 w-56 mt-2 origin-top-right border rounded-lg shadow-xl backdrop-blur-md bg-white/10 border-white/20"
+          className="absolute right-0 z-50 w-56 mt-2 origin-top-right border rounded-lg shadow-xl backdrop-blur-md bg-gray-900/95 border-white/20"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="options-menu"
@@ -40,7 +40,7 @@ const Dropdown: React.FC<DropdownProps> = ({ items }) => {
               <Link
                 key={index}
                 to={item.href}
-                className="block w-full px-4 py-3 text-sm text-left text-white transition-colors duration-300 hover:bg-white/10 focus:bg-white/20 first:rounded-t-lg last:rounded-b-lg"
+                className="block w-full px-4 py-3 text-sm text-left text-white transition-colors duration-300 hover:bg-gray-800/80 focus:bg-gray-700/80 first:rounded-t-lg last:rounded-b-lg"
                 role="menuitem"
                 smooth={true}
                 duration={500}
