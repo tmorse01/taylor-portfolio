@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import LogoIcon from "./LogoIcon";
 import Dropdown from "./Dropdown";
 import Nav from "./Nav";
 import GlareHover from "../../blocks/Animations/GlareHover/GlareHover";
@@ -51,11 +50,8 @@ const Header = () => {
         `}
       >
         <a href="#" className="relative flex items-center justify-center group">
-          <div className="absolute inset-0 transition-opacity duration-300 rounded-full opacity-0 bg-blue-400/20 blur-lg group-hover:opacity-100"></div>
-          <FontAwesomeIcon
-            icon={faCode}
-            className="relative z-10 text-xl transition-all duration-300 drop-shadow-glow"
-          />
+          <div className="absolute inset-0 transition-opacity duration-300 rounded-full opacity-0 bg-gradient-to-tr from-blue-400 to-blue-700 group-hover:opacity-100 blur-md"></div>
+          <LogoIcon className="relative z-10 w-6 h-6 transition-all duration-300 drop-shadow-glow" />
           <span className="sr-only">Portfolio</span>
         </a>
         <div className="ml-auto lg:hidden">
