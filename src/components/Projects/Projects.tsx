@@ -33,7 +33,7 @@ const Projects = () => {
           />
           <ProjectCard
             title="Housing Market Trends"
-            description="Created a web application that allows users to view and analyze housing market trends in the US."
+            description="Leveraging Zillow’s comprehensive datasets, I engineered visually stunning, interactive data visualizations to uncover and explore dynamic trends in the US housing market."
             technologies={[
               "React",
               "HeadlessUI",
@@ -48,7 +48,7 @@ const Projects = () => {
           />
           <ProjectCard
             title="Boggle Bolt"
-            description="Built a fast-paced React implementation of the classic Boggle word game with intelligent DFS algorithms, Trie-optimized word validation, and real-time path visualization featuring electric animations and comprehensive game statistics."
+            description="Built a fast-paced React implementation of the classic Boggle word game with intelligent DFS algorithms, Trie-optimized word validation, and real-time path visualization."
             technologies={[
               "React",
               "TypeScript",
