@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-12 md:py-24 lg:py-32 bg-gradient-to-b from-slate-50 to-blue-50/50 dark:from-slate-900 dark:to-blue-950/50"
+      className="py-12 md:py-24 lg:py-32 bg-gradient-to-b from-blue-50 to-indigo-100/60 dark:from-slate-900 dark:to-blue-950/50"
     >
       <div className="container px-4 mx-auto space-y-12 md:px-6">
         <SectionHeader
