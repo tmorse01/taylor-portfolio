@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="relative py-12 overflow-hidden bg-gradient-to-r from-indigo-900/20 to-blue-900/20 md:py-24 lg:py-32"
+      className="relative py-12 overflow-hidden bg-gradient-to-b from-stone-100 to-amber-50/30 dark:from-gray-800 dark:to-slate-900/80 md:py-24 lg:py-32"
     >
       <div className="container relative px-4 mx-auto space-y-12 md:px-6">
         <SectionHeader

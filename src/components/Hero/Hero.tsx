@@ -22,6 +22,7 @@ const Hero = () => {
             <div className="p-6 text-white border shadow-lg md:p-8 rounded-xl bg-blue-800/20 backdrop-blur-md border-blue-300/20">
               <div className="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
                 <SplitText
+                  className="p-2"
                   text="Hi, I'm Taylor Morse"
                   splitType="words"
                   duration={0.8}
@@ -31,7 +32,7 @@ const Hero = () => {
                   textAlign="left"
                 />
               </div>
-              <div className="mx-auto max-w-[700px] text-xl md:text-2xl mt-4">
+              <div className="mx-auto max-w-[700px] text-xl md:text-2xl mt-4 text-slate-300">
                 <FadeIn delay={300} duration={1200}>
                   <p className="mb-4">
                     Senior full stack developer specializing in React and

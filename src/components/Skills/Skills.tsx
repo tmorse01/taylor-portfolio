@@ -22,7 +22,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-12 bg-gray-200 dark:bg-gray-900 md:py-24 lg:py-32"
+      className="py-12 bg-gradient-to-b from-stone-100 to-amber-50/30 dark:from-gray-800 dark:to-slate-900/80 md:py-24 lg:py-32"
     >
       <div className="container px-4 mx-auto space-y-12 md:px-6">
         <SectionHeader

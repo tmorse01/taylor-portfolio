@@ -54,7 +54,7 @@ const Header = () => {
           <div className="absolute inset-0 transition-opacity duration-300 rounded-full opacity-0 bg-blue-400/20 blur-lg group-hover:opacity-100"></div>
           <FontAwesomeIcon
             icon={faCode}
-            className="relative z-10 text-xl text-white transition-all duration-300 drop-shadow-glow"
+            className="relative z-10 text-xl transition-all duration-300 drop-shadow-glow"
           />
           <span className="sr-only">Portfolio</span>
         </a>
