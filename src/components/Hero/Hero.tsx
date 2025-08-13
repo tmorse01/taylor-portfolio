@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="grid max-w-[1300px] mx-auto gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16">
           <div className="grid gap-4">
             {/* Glass Blue Container for Text */}
-            <div className="p-6 border shadow-lg md:p-8 rounded-xl bg-blue-800/20 backdrop-blur-md border-blue-300/20">
+            <div className="p-6 text-white border shadow-lg md:p-8 rounded-xl bg-blue-800/20 backdrop-blur-md border-blue-300/20">
               <div className="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
                 <SplitText
                   text="Hi, I'm Taylor Morse"

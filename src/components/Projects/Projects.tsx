@@ -5,13 +5,12 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-12 md:py-24 lg:py-32 bg-gradient-to-b from-gray-900 to-black"
+      className="py-12 md:py-24 lg:py-32 bg-gradient-to-b from-gray-200 to-white dark:from-gray-900 dark:to-black"
     >
       <div className="container px-4 mx-auto space-y-12 md:px-6">
         <SectionHeader
           title="Projects"
           description="Showcasing my expertise in modern web development with React, TypeScript, and full-stack technologies. These projects demonstrate my ability to create intuitive user experiences, implement complex data visualizations, and build scalable applications."
-          useShinyText={true}
           size="large"
           fadeProps={{ duration: 800, threshold: 0.2 }}
         />

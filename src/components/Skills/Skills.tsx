@@ -28,7 +28,6 @@ const Skills = () => {
         <SectionHeader
           title="My Skills"
           description="I have a wide range of skills in web development, including React, Typescript, Node.js, Java, and more."
-          useShinyText={true}
           size="large"
           fadeProps={{ duration: 800, threshold: 0.2 }}
         />

@@ -1,6 +1,5 @@
 import React from "react";
 import FadeContent from "../../blocks/Animations/FadeContent/FadeContent";
-import { ShinyText } from "../../blocks/TextAnimations";
 
 interface SectionHeaderProps {
   title: string;
@@ -21,8 +20,6 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   title,
   description,
   size = "default",
-  useShinyText = false,
-  shinyTextSpeed = 7,
   className = "",
   fadeProps = {
     duration: 800,
@@ -40,8 +37,8 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   // Determine description class based on size
   const descriptionClass =
     size === "large"
-      ? "max-w-[900px] md:text-2xl/relaxed lg:text-xl/relaxed xl:text-2xl/relaxed"
-      : "max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed";
+      ? "max-w-[900px] md:text-2xl/relaxed lg:text-xl/relaxed xl:text-2xl/relaxed text-gray-600 dark:text-gray-400"
+      : "max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-gray-600 dark:text-gray-400";
 
   return (
     <FadeContent
@@ -54,15 +51,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
       <div className="flex flex-col items-center justify-center space-y-4 text-center">
         <div className="space-y-2">
           <h2 className={headingClass}>{title}</h2>
-          {description && useShinyText ? (
-            <ShinyText
-              className={descriptionClass}
-              text={description}
-              speed={shinyTextSpeed}
-            />
-          ) : (
-            description && <p className={descriptionClass}>{description}</p>
-          )}
+          <p className={descriptionClass}>{description}</p>
         </div>
       </div>
     </FadeContent>

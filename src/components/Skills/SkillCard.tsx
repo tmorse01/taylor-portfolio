@@ -26,10 +26,14 @@ const SkillCard: React.FC<SkillCardProps> = ({ title, icon, description }) => {
         isExpanded ? "" : "h-72"
       }`}
     >
-      <div className="mb-4 text-5xl text-cyan-400">{icon}</div>
-      <h3 className="mb-2 text-xl font-bold text-white">{title}</h3>
+      <div className="mb-4 text-5xl text-cyan-400 dark:text-cyan-400">
+        {icon}
+      </div>
+      <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+        {title}
+      </h3>
       <div
-        className={`flex-1 text-base text-gray-200 relative ${
+        className={`flex-1 text-base text-gray-700 dark:text-gray-200 relative ${
           isExpanded ? "overflow-auto" : "overflow-hidden"
         }`}
       >
@@ -38,7 +42,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ title, icon, description }) => {
         </div>
         {shouldTruncate && (
           <span
-            className="block mt-2 text-sm cursor-pointer text-cyan-400 hover:underline"
+            className="block mt-2 text-sm cursor-pointer text-cyan-600 dark:text-cyan-400 hover:underline"
             onClick={toggleExpanded}
           >
             Read more
@@ -46,7 +50,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ title, icon, description }) => {
         )}
         {isExpanded && (
           <span
-            className="block mt-2 text-sm cursor-pointer text-cyan-400 hover:underline"
+            className="block mt-2 text-sm cursor-pointer text-cyan-600 dark:text-cyan-400 hover:underline"
             onClick={toggleExpanded}
           >
             Show less

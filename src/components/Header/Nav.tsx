@@ -7,7 +7,7 @@ export default function Nav() {
         to="about"
         smooth={true}
         duration={500}
-        className="relative px-3 py-1 font-medium text-white transition-all duration-300 group"
+        className="relative px-3 py-1 font-medium transition-all duration-300 group"
         activeClass="after:w-full text-blue-100"
       >
         <span className="relative z-10">About</span>
@@ -18,7 +18,7 @@ export default function Nav() {
         to="skills"
         smooth={true}
         duration={500}
-        className="relative px-3 py-1 font-medium text-white transition-all duration-300 group"
+        className="relative px-3 py-1 font-medium transition-all duration-300 group"
         activeClass="after:w-full text-blue-100"
       >
         <span className="relative z-10">Skills</span>
@@ -29,7 +29,7 @@ export default function Nav() {
         to="experience"
         smooth={true}
         duration={500}
-        className="relative px-3 py-1 font-medium text-white transition-all duration-300 group"
+        className="relative px-3 py-1 font-medium transition-all duration-300 group"
         activeClass="after:w-full text-blue-100"
       >
         <span className="relative z-10">Experience</span>
@@ -40,7 +40,7 @@ export default function Nav() {
         to="projects"
         smooth={true}
         duration={500}
-        className="relative px-3 py-1 font-medium text-white transition-all duration-300 group"
+        className="relative px-3 py-1 font-medium transition-all duration-300 group"
         activeClass="after:w-full text-blue-100"
       >
         <span className="relative z-10">Projects</span>
@@ -51,7 +51,7 @@ export default function Nav() {
         to="contact"
         smooth={true}
         duration={500}
-        className="relative px-3 py-1 font-medium text-white transition-all duration-300 group"
+        className="relative px-3 py-1 font-medium transition-all duration-300 group"
         activeClass="after:w-full text-blue-100"
       >
         <span className="relative z-10">Contact</span>

@@ -11,7 +11,6 @@ const Experience = () => {
         <SectionHeader
           title="My Experience"
           description="I have worked on a variety of projects, ranging from small startups to large enterprises."
-          useShinyText={true}
           size="large"
           fadeProps={{ duration: 800, threshold: 0.2 }}
         />

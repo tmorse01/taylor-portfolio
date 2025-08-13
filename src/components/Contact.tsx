@@ -14,7 +14,6 @@ const Contact = () => {
         <SectionHeader
           title="Get in Touch"
           description="Feel free to reach out to me if you have any questions or would like to discuss a potential project."
-          useShinyText={true}
           size="large"
           fadeProps={{ duration: 800, threshold: 0.2 }}
         />
