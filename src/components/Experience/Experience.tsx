@@ -37,17 +37,20 @@ const Experience = () => {
                   <li className="flex items-start">
                     <span className="text-blue-500 mr-2 mt-1.5">•</span>
                     <span>
-                      Designed and implemented a modern pricing and loan
-                      application platform, replacing legacy Excel-based systems
-                      and streamlining workflows
+                      Architected and built Builders Capital’s next-generation
+                      architecture, leveraging Node.js, microservices, and
+                      cloud-native patterns to replace legacy systems;
+                      established shared component libraries, authentication
+                      flows (MFA, JWT, device registration), and scalable CI/CD
+                      pipelines to support enterprise-grade software solutions.
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-500 mr-2 mt-1.5">•</span>
                     <span>
-                      Developed a reusable React component library leveraging
-                      Ant Design, Kendo UI, and TypeScript, featuring advanced
-                      forms and data tables
+                      Designed and implemented a modern pricing and loan
+                      application platform, replacing legacy Excel-based systems
+                      and streamlining workflows.
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -57,15 +60,6 @@ const Experience = () => {
                       system by implementing modern build optimization
                       techniques, resulting in faster user workflows and
                       improved productivity
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-2 mt-1.5">•</span>
-                    <span>
-                      Architected and implemented a custom authentication system
-                      managing refresh tokens, known devices, and one-time
-                      passwords (OTP), providing enhanced security and user
-                      experience
                     </span>
                   </li>
                 </ul>
