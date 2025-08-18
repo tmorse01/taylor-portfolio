@@ -32,7 +32,7 @@ const Hero = () => {
                   textAlign="left"
                 />
               </div>
-              <div className="mx-auto max-w-[700px] text-xl md:text-2xl mt-4 text-slate-300">
+              <div className="mx-auto max-w-[700px] text-xl md:text-2xl mt-4 text-gray-100">
                 <FadeIn delay={300} duration={1200}>
                   <p className="mb-4">
                     Senior full stack developer specializing in React and
