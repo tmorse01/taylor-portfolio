@@ -88,26 +88,28 @@ const Experience = () => {
                   <li className="flex items-start">
                     <span className="text-blue-500 mr-2 mt-1.5">•</span>
                     <span>
+                      Promoted to Lead Software Developer, managing junior
+                      developers and guiding architecture, code quality, and
+                      project delivery.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-500 mr-2 mt-1.5">•</span>
+                    <span>
+                      Expanded the development team from 4 to 14 engineers by
+                      leading recruitment efforts, reviewing resumes, conducting
+                      technical interviews, and driving a structured onboarding
+                      program that accelerated ramp-up time and improved team
+                      cohesion.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-500 mr-2 mt-1.5">•</span>
+                    <span>
                       Acted as tech lead for multiple business critical internal
                       applications, coordinating infrastructure deployments and
                       presenting implementation plans to the change management
-                      board
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-2 mt-1.5">•</span>
-                    <span>
-                      Helped grow the team from 4 developers to 14. Reviewing
-                      resumes, conducting technical interviews, and performing
-                      onboarding
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-2 mt-1.5">•</span>
-                    <span>
-                      Mentored junior developers through pair programming
-                      sessions and code reviews, contributing to their career
-                      advancement and skill development
+                      board.
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -117,7 +119,7 @@ const Experience = () => {
                       system, empowering business analysts to independently
                       design and deploy complex business logic, significantly
                       accelerating solution delivery and reducing reliance on
-                      developer resources
+                      developer resources.
                     </span>
                   </li>
                 </ul>
