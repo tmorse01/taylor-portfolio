@@ -16,6 +16,21 @@ const Projects = () => {
         />
         <div className="grid items-stretch gap-10 mx-auto sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
           <ProjectCard
+            title="Construction Lender Regression Analysis"
+            description="A modern, interactive web application for analyzing real estate property data with advanced regression analysis, data visualization, and comprehensive filtering capabilities built for construction lenders and real estate professionals."
+            technologies={[
+              "React",
+              "TypeScript",
+              "Material-UI",
+              "Recharts",
+              "Google Maps API",
+              "jsPDF",
+            ]}
+            liveLink="https://regression-demo.netlify.app/"
+            githubLinks={["https://github.com/tmorse01/regression-demo"]}
+            videoUrl="/demos/RegressionAnalysis.mp4"
+          />
+          <ProjectCard
             title="Pitch Site"
             description="Developed a flashy, animated pitch deck generator that helps real estate investors create AI-powered, colorful presentations with step-by-step forms and shareable previews."
             technologies={[
@@ -33,7 +48,7 @@ const Projects = () => {
           />
           <ProjectCard
             title="Housing Market Trends"
-            description="Leveraging Zillow’s comprehensive datasets, I engineered visually stunning, interactive data visualizations to uncover and explore dynamic trends in the US housing market."
+            description="Leveraging Zillow's comprehensive datasets, I engineered visually stunning, interactive data visualizations to uncover and explore dynamic trends in the US housing market."
             technologies={[
               "React",
               "HeadlessUI",
@@ -45,21 +60,6 @@ const Projects = () => {
             liveLink="https://housing-market-trends.netlify.app/"
             githubLinks={["https://github.com/tmorse01/housing-visualizations"]}
             videoUrl="/demos/HousingMarketTrends.mp4"
-          />
-          <ProjectCard
-            title="Boggle Bolt"
-            description="Built a fast-paced React implementation of the classic Boggle word game with intelligent DFS algorithms, Trie-optimized word validation, and real-time path visualization."
-            technologies={[
-              "React",
-              "TypeScript",
-              "Tailwind",
-              "Vite",
-              "DFS Algorithms",
-              "Trie Data Structure",
-            ]}
-            liveLink="https://taylor-boggle.netlify.app/"
-            githubLinks={["https://github.com/tmorse01/boggle-game"]}
-            videoUrl="/demos/Boggle.mp4"
           />
         </div>
       </div>

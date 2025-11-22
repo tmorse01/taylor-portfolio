@@ -19,6 +19,7 @@ import {
   faChartColumn,
   faProjectDiagram,
   faSitemap,
+  faFilePdf,
 } from "@fortawesome/free-solid-svg-icons";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
@@ -42,6 +43,8 @@ import SQLIcon from "../assets/logos/sql.svg";
 import JavaIcon from "../assets/logos/Java.svg";
 import CssIcon from "../assets/logos/css.svg";
 import HtmlIcon from "../assets/logos/html.svg";
+import MaterialUIIcon from "../assets/logos/material-ui.svg";
+import googleMapsIcon from "../assets/logos/google-maps.svg";
 
 // Define the type for tech icon info
 export interface TechIconInfo {
@@ -71,6 +74,7 @@ export const techIconMap: Record<string, TechIconInfo> = {
   Recharts: { icon: faChartColumn, color: "text-blue-400" },
   "DFS Algorithms": { icon: faProjectDiagram, color: "text-purple-500" },
   "Trie Data Structure": { icon: faSitemap, color: "text-green-500" },
+  jsPDF: { icon: faFilePdf, color: "text-red-500" },
 
   // Custom SVG icons
   Azure: { icon: AzureIcon, color: "text-blue-500", isSVG: true },
@@ -93,6 +97,12 @@ export const techIconMap: Record<string, TechIconInfo> = {
   Java: { icon: JavaIcon, color: "text-current", isSVG: true },
   CSS: { icon: CssIcon, color: "text-current", isSVG: true },
   HTML: { icon: HtmlIcon, color: "text-current", isSVG: true },
+  "Material-UI": { icon: MaterialUIIcon, color: "text-blue-500", isSVG: true },
+  "Google Maps API": {
+    icon: googleMapsIcon,
+    color: "text-blue-600",
+    isSVG: true,
+  },
 };
 
 // Helper function to get icon info for a tech name
