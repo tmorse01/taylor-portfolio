@@ -16,6 +16,23 @@ const Projects = () => {
         />
         <div className="grid items-stretch gap-10 mx-auto sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
           <ProjectCard
+            title="Group Pay"
+            description="Cloud-native expense tracking app deployed on Azure with comprehensive observability via Application Insights. Features application maps, distributed tracing, and performance telemetry to practice enterprise monitoring patterns alongside secure authentication and flexible bill splitting."
+            technologies={[
+              "React",
+              "TypeScript",
+              "Azure App Insights",
+              "Azure Cloud",
+              "Fastify",
+              "PostgreSQL",
+              "Prisma",
+              "TanStack Query",
+            ]}
+            liveLink="https://gentle-cliff-0f2cef31e.3.azurestaticapps.net/"
+            githubLinks={["https://github.com/tmorse01/group-pay"]}
+            videoUrl="/demos/GroupPay.mp4"
+          />
+          <ProjectCard
             title="Construction Lender Regression Analysis"
             description="A modern, interactive web application for analyzing real estate property data with advanced regression analysis, data visualization, and comprehensive filtering capabilities built for construction lenders and real estate professionals."
             technologies={[
@@ -35,11 +52,10 @@ const Projects = () => {
             description="Developed a flashy, animated pitch deck generator that helps real estate investors create AI-powered, colorful presentations with step-by-step forms and shareable previews."
             technologies={[
               "React",
-              "Vite",
               "TypeScript",
-              "Mantine UI",
               "Node.js",
               "Express",
+              "Mantine UI",
               "Railway",
             ]}
             liveLink="https://pitchsite-client-production.up.railway.app/share/lXYUaM"
@@ -51,11 +67,12 @@ const Projects = () => {
             description="Leveraging Zillow's comprehensive datasets, I engineered visually stunning, interactive data visualizations to uncover and explore dynamic trends in the US housing market."
             technologies={[
               "React",
+              "TypeScript",
+              "React-Query",
+              "Tailwind",
               "HeadlessUI",
               "Recharts",
               "D3",
-              "React-Query",
-              "Tailwind",
             ]}
             liveLink="https://housing-market-trends.netlify.app/"
             githubLinks={["https://github.com/tmorse01/housing-visualizations"]}

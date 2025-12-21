@@ -45,6 +45,9 @@ import CssIcon from "../assets/logos/css.svg";
 import HtmlIcon from "../assets/logos/html.svg";
 import MaterialUIIcon from "../assets/logos/material-ui.svg";
 import googleMapsIcon from "../assets/logos/google-maps.svg";
+import PrismaIcon from "../assets/logos/prisma.svg";
+import PostgreSQLIcon from "../assets/logos/PostgresSQL.svg";
+import FastifyIcon from "../assets/logos/Fastify.svg";
 
 // Define the type for tech icon info
 export interface TechIconInfo {
@@ -78,6 +81,12 @@ export const techIconMap: Record<string, TechIconInfo> = {
 
   // Custom SVG icons
   Azure: { icon: AzureIcon, color: "text-blue-500", isSVG: true },
+  "Azure Cloud": { icon: AzureIcon, color: "text-blue-500", isSVG: true },
+  "Azure App Insights": {
+    icon: AzureIcon,
+    color: "text-blue-500",
+    isSVG: true,
+  },
   Express: { icon: ExpressLogo, color: "text-gray-600", isSVG: true },
   TypeScript: { icon: TypeScriptLogo, color: "text-blue-600", isSVG: true },
   "Next.js": { icon: NextJSLogo, color: "text-gray-800", isSVG: true },
@@ -89,7 +98,15 @@ export const techIconMap: Record<string, TechIconInfo> = {
   D3: { icon: D3Icon, color: "text-current", isSVG: true },
   HeadlessUI: { icon: HeadlessUIIcon, color: "text-cyan-400", isSVG: true },
   "React-Query": { icon: ReactQueryIcon, color: "text-current", isSVG: true },
+  "TanStack Query": {
+    icon: ReactQueryIcon,
+    color: "text-current",
+    isSVG: true,
+  },
   Netlify: { icon: NetlifyIcon, color: "text-current", isSVG: true },
+  Fastify: { icon: FastifyIcon, color: "text-current", isSVG: true },
+  PostgreSQL: { icon: PostgreSQLIcon, color: "text-blue-600", isSVG: true },
+  Prisma: { icon: PrismaIcon, color: "text-current", isSVG: true },
   Mongoose: { icon: MongoDbIcon, color: "text-current", isSVG: true },
   Cloudinary: { icon: CloudinaryIcon, color: "text-current", isSVG: true },
   "C#": { icon: CSharpIcon, color: "text-current", isSVG: true },
