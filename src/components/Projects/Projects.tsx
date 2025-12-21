@@ -28,7 +28,7 @@ const Projects = () => {
               "Prisma",
               "TanStack Query",
             ]}
-            liveLink="https://gentle-cliff-0f2cef31e.3.azurestaticapps.net/"
+            liveLink="https://grouppay.taylormorsedev.com"
             githubLinks={["https://github.com/tmorse01/group-pay"]}
             videoUrl="/demos/GroupPay.mp4"
           />
