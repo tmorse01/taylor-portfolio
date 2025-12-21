@@ -20,7 +20,7 @@ const Experience = () => {
             <div className="grid gap-4 p-6 transition-all bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg">
               <div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-                  Senior Front End Software Developer
+                  Senior Full Stack Software Developer
                 </h3>
                 <p className="text-lg font-semibold text-blue-600 dark:text-blue-400">
                   Builders Capital
