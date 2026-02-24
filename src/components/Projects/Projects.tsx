@@ -48,19 +48,18 @@ const Projects = () => {
             videoUrl="/demos/RegressionAnalysis.mp4"
           />
           <ProjectCard
-            title="Pitch Site"
-            description="Developed a flashy, animated pitch deck generator that helps real estate investors create AI-powered, colorful presentations with step-by-step forms and shareable previews."
+            title="Rent vs Buy Dashboard"
+            description="A comprehensive React web dashboard that helps users compare Rent vs Buy scenarios over time, using both cash-loss (unrecoverable costs) and net worth (balance-sheet) views. Features interactive scenario inputs, live-updating charts showing unrecoverable cost comparisons, net worth over time, and wealth breakdowns, key metrics including break-even calculations, and export functionality for scenarios and analysis packets."
             technologies={[
               "React",
               "TypeScript",
-              "Node.js",
-              "Express",
+              "Vite",
               "Mantine UI",
-              "Railway",
+              "Recharts",
             ]}
-            liveLink="https://pitchsite-client-production.up.railway.app/share/lXYUaM"
-            githubLinks={["https://github.com/tmorse01/pitchsite"]}
-            videoUrl="/demos/PitchSite.mp4"
+            liveLink="https://rent-vs-buy-comp.netlify.app/"
+            githubLinks={["https://github.com/tmorse01/rent-vs-buy-dashboard"]}
+            videoUrl="/demos/RentVsBuyDashboard.mp4"
           />
           <ProjectCard
             title="Housing Market Trends"
