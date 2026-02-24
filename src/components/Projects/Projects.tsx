@@ -48,35 +48,49 @@ const Projects = () => {
             videoUrl="/demos/RegressionAnalysis.mp4"
           />
           <ProjectCard
-            title="Pitch Site"
-            description="Developed a flashy, animated pitch deck generator that helps real estate investors create AI-powered, colorful presentations with step-by-step forms and shareable previews."
+            title="Rent vs Buy Dashboard"
+            description="A comprehensive React web dashboard that helps users compare Rent vs Buy scenarios over time, using both cash-loss (unrecoverable costs) and net worth (balance-sheet) views. Features interactive scenario inputs, live-updating charts showing unrecoverable cost comparisons, net worth over time, and wealth breakdowns, key metrics including break-even calculations, and export functionality for scenarios and analysis packets."
             technologies={[
               "React",
               "TypeScript",
-              "Node.js",
-              "Express",
+              "Vite",
               "Mantine UI",
-              "Railway",
+              "Recharts",
             ]}
-            liveLink="https://pitchsite-client-production.up.railway.app/share/lXYUaM"
-            githubLinks={["https://github.com/tmorse01/pitchsite"]}
-            videoUrl="/demos/PitchSite.mp4"
+            liveLink="https://rent-vs-buy-comp.netlify.app/"
+            githubLinks={["https://github.com/tmorse01/rent-vs-buy-dashboard"]}
+            videoUrl="/demos/RentVsBuy.mp4"
           />
           <ProjectCard
-            title="Housing Market Trends"
-            description="Leveraging Zillow's comprehensive datasets, I engineered visually stunning, interactive data visualizations to uncover and explore dynamic trends in the US housing market."
+            title="Chess App"
+            description="A fully-featured online chess application featuring real-time multiplayer gameplay, move validation, game history tracking, and an intuitive user interface. Built with a focus on clean code architecture and seamless user experience for chess enthusiasts."
             technologies={[
               "React",
               "TypeScript",
-              "React-Query",
+              "Express",
+              "Socket.io",
               "Tailwind",
-              "HeadlessUI",
-              "Recharts",
-              "D3",
+              "Railway",
             ]}
-            liveLink="https://housing-market-trends.netlify.app/"
-            githubLinks={["https://github.com/tmorse01/housing-visualizations"]}
-            videoUrl="/demos/HousingMarketTrends.mp4"
+            liveLink="https://chess-app.up.railway.app/"
+            githubLinks={["https://github.com/tmorse01/chess"]}
+            videoUrl="/demos/Chess.mp4"
+          />
+          <ProjectCard
+            title="Diff-Slides"
+            description="An interactive presentation tool for comparing and showcasing code differences visually. Perfect for presentations, documentation, and collaborative code reviews with an intuitive interface for highlighting changes side-by-side."
+            technologies={["React", "TypeScript", "Vite", "Tailwind CSS"]}
+            liveLink="https://diff-slides.vercel.app/"
+            githubLinks={["https://github.com/tmorse01/diff-slides"]}
+            videoUrl="/demos/Diff-Slides.mp4"
+          />
+          <ProjectCard
+            title="Layout Showcase App"
+            description="A comprehensive showcase of modern CSS layout techniques and patterns. Demonstrates Flexbox, CSS Grid, responsive design, and advanced layout strategies with interactive examples and live code demonstrations."
+            technologies={["React", "TypeScript", "Tailwind CSS", "Vite"]}
+            liveLink="https://layout-showcase-app.netlify.app/"
+            githubLinks={["https://github.com/tmorse01/layout-showcase-app"]}
+            videoUrl="/demos/LayoutShowcase.mp4"
           />
         </div>
       </div>
