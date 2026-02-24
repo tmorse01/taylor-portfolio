@@ -91,7 +91,7 @@ const Projects = () => {
             videoUrl="/demos/Diff-Slides.mp4"
           />
           <ProjectCard
-            title="Layout Showcase App"
+            title="Layout Showcase"
             description="A comprehensive showcase of modern CSS layout techniques and patterns. Demonstrates Flexbox, CSS Grid, responsive design, and advanced layout strategies with interactive examples and live code demonstrations."
             technologies={[
               "React",
