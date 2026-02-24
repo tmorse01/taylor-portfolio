@@ -69,7 +69,7 @@ const Projects = () => {
               "TypeScript",
               "Express",
               "Socket.io",
-              "Tailwind",
+              "Tailwind CSS",
               "Railway",
             ]}
             liveLink="https://chess-app.up.railway.app/"
@@ -79,7 +79,13 @@ const Projects = () => {
           <ProjectCard
             title="Diff-Slides"
             description="An interactive presentation tool for comparing and showcasing code differences visually. Perfect for presentations, documentation, and collaborative code reviews with an intuitive interface for highlighting changes side-by-side."
-            technologies={["React", "TypeScript", "Vite", "Tailwind CSS"]}
+            technologies={[
+              "Next.js",
+              "TypeScript",
+              "Tailwind CSS",
+              "Supabase",
+              "PostgreSQL",
+            ]}
             liveLink="https://diff-slides.vercel.app/"
             githubLinks={["https://github.com/tmorse01/diff-slides"]}
             videoUrl="/demos/Diff-Slides.mp4"
@@ -87,7 +93,12 @@ const Projects = () => {
           <ProjectCard
             title="Layout Showcase App"
             description="A comprehensive showcase of modern CSS layout techniques and patterns. Demonstrates Flexbox, CSS Grid, responsive design, and advanced layout strategies with interactive examples and live code demonstrations."
-            technologies={["React", "TypeScript", "Tailwind CSS", "Vite"]}
+            technologies={[
+              "React",
+              "TypeScript",
+              "Tailwind CSS",
+              "Material-UI",
+            ]}
             liveLink="https://layout-showcase-app.netlify.app/"
             githubLinks={["https://github.com/tmorse01/layout-showcase-app"]}
             videoUrl="/demos/LayoutShowcase.mp4"

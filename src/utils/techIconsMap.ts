@@ -48,6 +48,7 @@ import googleMapsIcon from "../assets/logos/google-maps.svg";
 import PrismaIcon from "../assets/logos/prisma.svg";
 import PostgreSQLIcon from "../assets/logos/PostgresSQL.svg";
 import FastifyIcon from "../assets/logos/Fastify.svg";
+import SupabaseIcon from "../assets/logos/supabase.svg";
 
 // Define the type for tech icon info
 export interface TechIconInfo {
@@ -90,7 +91,7 @@ export const techIconMap: Record<string, TechIconInfo> = {
   Express: { icon: ExpressLogo, color: "text-gray-600", isSVG: true },
   TypeScript: { icon: TypeScriptLogo, color: "text-blue-600", isSVG: true },
   "Next.js": { icon: NextJSLogo, color: "text-gray-800", isSVG: true },
-  Tailwind: { icon: TailwindLogo, color: "text-cyan-500", isSVG: true },
+  "Tailwind CSS": { icon: TailwindLogo, color: "text-cyan-500", isSVG: true },
   MongoDB: { icon: MongoDbIcon, color: "text-current", isSVG: true },
   Railway: { icon: RailwayIcon, color: "text-current", isSVG: true },
   "Mantine UI": { icon: MantineIcon, color: "text-cyan-500", isSVG: true },
@@ -118,6 +119,11 @@ export const techIconMap: Record<string, TechIconInfo> = {
   "Google Maps API": {
     icon: googleMapsIcon,
     color: "text-blue-600",
+    isSVG: true,
+  },
+  Supabase: {
+    icon: SupabaseIcon,
+    color: "text-current",
     isSVG: true,
   },
 };
