@@ -9,7 +9,7 @@ interface ProjectProps {
   title: string;
   description: string;
   technologies: string[];
-  liveLink: string;
+  liveLink?: string;
   githubLinks: string[];
   videoUrl?: string;
 }
@@ -80,14 +80,18 @@ const ProjectCard: React.FC<ProjectProps> = ({
           )}
         </div>
         <h3 className="text-xl font-bold text-white">
-          <a
-            href={liveLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-colors hover:text-blue-400"
-          >
-            {title}
-          </a>
+          {liveLink ? (
+            <a
+              href={liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-blue-400"
+            >
+              {title}
+            </a>
+          ) : (
+            title
+          )}
         </h3>
         <p className="text-sm text-gray-300">{description}</p>
         <TechStack technologies={technologies} className="mt-2" />

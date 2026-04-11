@@ -16,23 +16,6 @@ const Projects = () => {
         />
         <div className="grid items-stretch gap-10 mx-auto sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
           <ProjectCard
-            title="Group Pay"
-            description="Cloud-native expense tracking app deployed on Azure with comprehensive observability via Application Insights. Features application maps, distributed tracing, and performance telemetry to practice enterprise monitoring patterns alongside secure authentication and flexible bill splitting."
-            technologies={[
-              "React",
-              "TypeScript",
-              "Azure App Insights",
-              "Azure Cloud",
-              "Fastify",
-              "PostgreSQL",
-              "Prisma",
-              "TanStack Query",
-            ]}
-            liveLink="https://grouppay.taylormorsedev.com"
-            githubLinks={["https://github.com/tmorse01/group-pay"]}
-            videoUrl="/demos/GroupPay.mp4"
-          />
-          <ProjectCard
             title="Construction Lender Regression Analysis"
             description="A modern, interactive web application for analyzing real estate property data with advanced regression analysis, data visualization, and comprehensive filtering capabilities built for construction lenders and real estate professionals."
             technologies={[
@@ -102,6 +85,22 @@ const Projects = () => {
             liveLink="https://layout-showcase-app.netlify.app/"
             githubLinks={["https://github.com/tmorse01/layout-showcase-app"]}
             videoUrl="/demos/LayoutShowcase.mp4"
+          />
+          <ProjectCard
+            title="Group Pay"
+            description="Cloud-native expense tracking app deployed on Azure with comprehensive observability via Application Insights. Features application maps, distributed tracing, and performance telemetry to practice enterprise monitoring patterns alongside secure authentication and flexible bill splitting."
+            technologies={[
+              "React",
+              "TypeScript",
+              "Azure App Insights",
+              "Azure Cloud",
+              "Fastify",
+              "PostgreSQL",
+              "Prisma",
+              "TanStack Query",
+            ]}
+            githubLinks={["https://github.com/tmorse01/group-pay"]}
+            videoUrl="/demos/GroupPay.mp4"
           />
         </div>
       </div>
