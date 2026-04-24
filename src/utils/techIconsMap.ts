@@ -15,12 +15,6 @@ import {
   faLinux,
   faDigitalOcean,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faChartColumn,
-  faProjectDiagram,
-  faSitemap,
-  faFilePdf,
-} from "@fortawesome/free-solid-svg-icons";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 // Import custom SVG logos
@@ -49,6 +43,7 @@ import PrismaIcon from "../assets/logos/prisma.svg";
 import PostgreSQLIcon from "../assets/logos/PostgresSQL.svg";
 import FastifyIcon from "../assets/logos/Fastify.svg";
 import SupabaseIcon from "../assets/logos/supabase.svg";
+import SocketIoIcon from "../assets/logos/socket.io.svg";
 
 // Define the type for tech icon info
 export interface TechIconInfo {
@@ -75,10 +70,7 @@ export const techIconMap: Record<string, TechIconInfo> = {
   Stripe: { icon: faStripe, color: "text-blue-500" },
   Linux: { icon: faLinux, color: "text-yellow-400" },
   DigitalOcean: { icon: faDigitalOcean, color: "text-blue-300" },
-  Recharts: { icon: faChartColumn, color: "text-blue-400" },
-  "DFS Algorithms": { icon: faProjectDiagram, color: "text-purple-500" },
-  "Trie Data Structure": { icon: faSitemap, color: "text-green-500" },
-  jsPDF: { icon: faFilePdf, color: "text-red-500" },
+  "Socket.io": { icon: SocketIoIcon, color: "text-current", isSVG: true },
 
   // Custom SVG icons
   Azure: { icon: AzureIcon, color: "text-blue-500", isSVG: true },
