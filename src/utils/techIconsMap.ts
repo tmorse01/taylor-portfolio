@@ -52,6 +52,20 @@ export interface TechIconInfo {
   isSVG?: boolean;
 }
 
+const azureIcon: TechIconInfo = {
+  icon: AzureIcon,
+  color: "text-blue-500",
+  isSVG: true,
+};
+
+/** Aliases map display strings (e.g. in project tags) to a canonical techIconMap key. */
+const techIconAliases: Record<string, string> = {
+  "Azure Cloud": "Azure",
+  "Azure App Insights": "Azure",
+  "Microsoft Azure": "Azure",
+  "Azure Application Insights": "Azure",
+};
+
 // A map of technology names to their icons and colors
 export const techIconMap: Record<string, TechIconInfo> = {
   // Font Awesome icons
@@ -73,13 +87,7 @@ export const techIconMap: Record<string, TechIconInfo> = {
   "Socket.io": { icon: SocketIoIcon, color: "text-current", isSVG: true },
 
   // Custom SVG icons
-  Azure: { icon: AzureIcon, color: "text-blue-500", isSVG: true },
-  "Azure Cloud": { icon: AzureIcon, color: "text-blue-500", isSVG: true },
-  "Azure App Insights": {
-    icon: AzureIcon,
-    color: "text-blue-500",
-    isSVG: true,
-  },
+  Azure: azureIcon,
   Express: { icon: ExpressLogo, color: "text-gray-600", isSVG: true },
   TypeScript: { icon: TypeScriptLogo, color: "text-blue-600", isSVG: true },
   "Next.js": { icon: NextJSLogo, color: "text-gray-800", isSVG: true },
@@ -122,7 +130,8 @@ export const techIconMap: Record<string, TechIconInfo> = {
 
 // Helper function to get icon info for a tech name
 export const getTechIconInfo = (name: string): TechIconInfo => {
-  return techIconMap[name] || { icon: faReact, color: "text-gray-400" };
+  const key = techIconAliases[name] ?? name;
+  return techIconMap[key] || { icon: faReact, color: "text-gray-400" };
 };
 
 // Helper function to extract the color without the text- prefix
