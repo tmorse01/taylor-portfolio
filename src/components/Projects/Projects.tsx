@@ -16,21 +16,6 @@ const Projects = () => {
         />
         <div className="grid items-stretch gap-10 mx-auto sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
           <ProjectCard
-            title="Construction Lender Regression Analysis"
-            description="A modern, interactive web application for analyzing real estate property data with advanced regression analysis, data visualization, and comprehensive filtering capabilities built for construction lenders and real estate professionals."
-            technologies={[
-              "React",
-              "TypeScript",
-              "Material-UI",
-              "Recharts",
-              "Google Maps API",
-              "jsPDF",
-            ]}
-            liveLink="https://regression-demo.netlify.app/"
-            githubLinks={["https://github.com/tmorse01/regression-demo"]}
-            videoUrl="/demos/RegressionAnalysis.mp4"
-          />
-          <ProjectCard
             title="Rent vs Buy Dashboard"
             description="A comprehensive React web dashboard that helps users compare Rent vs Buy scenarios over time, using both cash-loss (unrecoverable costs) and net worth (balance-sheet) views. Features interactive scenario inputs, live-updating charts showing unrecoverable cost comparisons, net worth over time, and wealth breakdowns, key metrics including break-even calculations, and export functionality for scenarios and analysis packets."
             technologies={[
@@ -85,6 +70,21 @@ const Projects = () => {
             liveLink="https://layout-showcase-app.netlify.app/"
             githubLinks={["https://github.com/tmorse01/layout-showcase-app"]}
             videoUrl="/demos/LayoutShowcase.mp4"
+          />
+          <ProjectCard
+            title="Construction Lender Regression Analysis"
+            description="A modern, interactive web application for analyzing real estate property data with advanced regression analysis, data visualization, and comprehensive filtering capabilities built for construction lenders and real estate professionals."
+            technologies={[
+              "React",
+              "TypeScript",
+              "Material-UI",
+              "Recharts",
+              "Google Maps API",
+              "jsPDF",
+            ]}
+            liveLink="https://regression-demo.netlify.app/"
+            githubLinks={["https://github.com/tmorse01/regression-demo"]}
+            videoUrl="/demos/RegressionAnalysis.mp4"
           />
           <ProjectCard
             title="Group Pay"
