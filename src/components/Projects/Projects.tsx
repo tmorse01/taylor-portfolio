@@ -72,8 +72,8 @@ const Projects = () => {
             videoUrl="/demos/LayoutShowcase.mp4"
           />
           <ProjectCard
-            title="Construction Lender Regression Analysis"
-            description="A modern, interactive web application for analyzing real estate property data with advanced regression analysis, data visualization, and comprehensive filtering capabilities built for construction lenders and real estate professionals."
+            title="LendSight"
+            description="Comparable analysis for real estate: an interactive web app for exploring property data with regression modeling, mapping, charts, and powerful filters—built for construction lenders and real estate professionals."
             technologies={[
               "React",
               "TypeScript",
@@ -82,7 +82,7 @@ const Projects = () => {
               "Google Maps API",
               "jsPDF",
             ]}
-            liveLink="https://regression-demo.netlify.app/"
+            liveLink="https://lendsight.netlify.app/"
             githubLinks={["https://github.com/tmorse01/regression-demo"]}
             videoUrl="/demos/RegressionAnalysis.mp4"
           />
