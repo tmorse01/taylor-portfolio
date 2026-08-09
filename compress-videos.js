@@ -1,12 +1,44 @@
 /* eslint-disable */
+/**
+ * Compress portfolio project demo videos for web delivery.
+ *
+ * Prerequisites:
+ * - FFmpeg installed and on your PATH (https://ffmpeg.org/download.html)
+ *
+ * How to compress a new demo video:
+ *
+ * 1. Record your screen demo (OBS, ShareX, Windows Game Bar, etc.)
+ * 2. Drop the raw file into `public/demos/` — use PascalCase to match existing
+ *    demos (e.g. `MyNewProject.mp4`)
+ * 3. Run from the project root:
+ *    `node compress-videos.js MyNewProject.mp4`
+ * 4. Compressed output lands in `public/demos/compressed/`
+ * 5. Replace the original: move the compressed file from `compressed/` back into
+ *    `public/demos/` (overwrite the raw file). Keep a backup elsewhere if needed.
+ * 6. Add the video to a project card in `src/components/Projects/Projects.tsx`:
+ *    `videoUrl="/demos/MyNewProject.mp4"`
+ *
+ * Target size: ~1–2 MB per video (720p @ 24fps, CRF 30).
+ *
+ * @example
+ * node compress-videos.js RentVsBuy.mp4
+ */
 import { execSync } from "child_process";
 import { readdirSync, statSync, existsSync, mkdirSync } from "fs";
 import { join, extname, basename } from "path";
 
+/** Raw demo videos go here before compression. */
 const INPUT_DIR = "./public/demos";
+
+/** Compressed output is written here — move files back to INPUT_DIR when done. */
 const OUTPUT_DIR = "./public/demos/compressed";
 
-// FFMPEG compression settings (optimized for 1-2MB target)
+/**
+ * FFmpeg flags tuned for small portfolio demo clips (~1–2 MB).
+ * - 720p @ 24fps keeps file size down while staying readable in project cards
+ * - CRF 30 is a good quality/size tradeoff for screen recordings
+ * - faststart moves metadata to the front for faster browser playback
+ */
 const FFMPEG_OPTIONS = [
   '-vf "fps=24,scale=1280:720"',
   "-c:v libx264",
@@ -20,6 +52,12 @@ const FFMPEG_OPTIONS = [
   "-b:a 64k",
 ].join(" ");
 
+/**
+ * Run FFmpeg to compress a single video file.
+ *
+ * @param {string} inputPath - Absolute or relative path to the source video
+ * @param {string} outputPath - Where to write the compressed .mp4
+ */
 function compressVideo(inputPath, outputPath) {
   const command = `ffmpeg -i "${inputPath}" ${FFMPEG_OPTIONS} "${outputPath}"`;
 
@@ -34,6 +72,12 @@ function compressVideo(inputPath, outputPath) {
   }
 }
 
+/**
+ * List video files in a directory (used to suggest filenames on error).
+ *
+ * @param {string} dir - Directory to scan
+ * @returns {string[]} Full paths to video files (.mp4, .mov, .avi, .mkv, .webm)
+ */
 function getVideoFiles(dir) {
   const videoExtensions = [".mp4", ".mov", ".avi", ".mkv", ".webm"];
 
@@ -52,6 +96,11 @@ function getVideoFiles(dir) {
   }
 }
 
+/**
+ * CLI entry point. Expects one argument: the filename (not a full path).
+ *
+ * @example node compress-videos.js Chess.mp4
+ */
 function main() {
   const filename = process.argv[2];
 

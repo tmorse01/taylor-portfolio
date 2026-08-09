@@ -1,29 +1,27 @@
 import React, { FC } from "react";
 import { Link as ScrollLink, LinkProps } from "react-scroll";
-import { baseStyles, getButtonStyles } from "./buttonStyles";
+import { ButtonVariant, getButtonClassName } from "./buttonStyles";
 
 interface ScrollLinkButtonProps extends LinkProps {
   children: React.ReactNode;
-  primary?: boolean;
-  basic?: boolean;
+  variant?: ButtonVariant;
   className?: string;
 }
 
 const ScrollLinkButton: FC<ScrollLinkButtonProps> = ({
-  primary,
-  basic,
+  variant = "default",
   children,
   to = "#",
   className = "",
+  role = "button",
   ...props
 }) => {
-  const linkStyles = getButtonStyles(primary, basic);
-
   return (
     /* @ts-expect-error - react-scroll type mismatch*/
     <ScrollLink
       to={to}
-      className={`${baseStyles} ${linkStyles} ${className}`}
+      className={getButtonClassName(variant, className)}
+      role={role}
       {...props}
     >
       {children}

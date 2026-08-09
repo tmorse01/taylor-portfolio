@@ -30,6 +30,22 @@ const Projects = () => {
             videoUrl="/demos/RentVsBuy.mp4"
           />
           <ProjectCard
+            title="DiskScope"
+            description="An Electron desktop app. A cleanup-focused disk usage analyzer for Windows developers and power users. Scan drives or folders, drill into the largest directories first, and get developer-aware cleanup hints for caches like node_modules and build outputs. With risk labels, live progress, and safe-by-default workflows."
+            technologies={[
+              "Electron",
+              "React",
+              "TypeScript",
+              "Material-UI",
+              "Vite",
+              "Vitest",
+              "Playwrite",
+            ]}
+            liveLink="https://disk-scope.netlify.app/"
+            githubLinks={["https://github.com/tmorse01/disk-scope"]}
+            videoUrl="/demos/DiskScope.mp4"
+          />
+          <ProjectCard
             title="Chess App"
             description="A fully-featured online chess application featuring real-time multiplayer gameplay, move validation, game history tracking, and an intuitive user interface. Built with a focus on clean code architecture and seamless user experience for chess enthusiasts."
             technologies={[
@@ -85,22 +101,6 @@ const Projects = () => {
             liveLink="https://lendsight.netlify.app/"
             githubLinks={["https://github.com/tmorse01/regression-demo"]}
             videoUrl="/demos/RegressionAnalysis.mp4"
-          />
-          <ProjectCard
-            title="Group Pay"
-            description="Cloud-native expense tracking app deployed on Azure with comprehensive observability via Application Insights. Features application maps, distributed tracing, and performance telemetry to practice enterprise monitoring patterns alongside secure authentication and flexible bill splitting."
-            technologies={[
-              "React",
-              "TypeScript",
-              "Azure App Insights",
-              "Azure Cloud",
-              "Fastify",
-              "PostgreSQL",
-              "Prisma",
-              "TanStack Query",
-            ]}
-            githubLinks={["https://github.com/tmorse01/group-pay"]}
-            videoUrl="/demos/GroupPay.mp4"
           />
         </div>
       </div>

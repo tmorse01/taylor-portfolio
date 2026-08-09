@@ -1,21 +1,18 @@
 import { ButtonHTMLAttributes } from "react";
-import { baseStyles, getButtonStyles } from "./buttonStyles";
+import { ButtonVariant, getButtonClassName } from "./buttonStyles";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  primary?: boolean;
-  basic?: boolean;
+  variant?: ButtonVariant;
 }
 
 export default function Button({
-  primary,
-  basic,
+  variant = "default",
+  className = "",
   children,
   ...props
 }: ButtonProps) {
-  const buttonStyles = getButtonStyles(primary, basic);
-
   return (
-    <button className={`${baseStyles} ${buttonStyles}`} {...props}>
+    <button className={getButtonClassName(variant, className)} {...props}>
       {children}
     </button>
   );

@@ -1,25 +1,26 @@
 import { AnchorHTMLAttributes, FC } from "react";
-import { baseStyles, getButtonStyles } from "./buttonStyles";
+import { ButtonVariant, getButtonClassName } from "./buttonStyles";
 
 interface LinkButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
-  primary?: boolean;
-  basic?: boolean;
+  variant?: ButtonVariant;
   icon?: JSX.Element;
   className?: string;
 }
 
 const LinkButton: FC<LinkButtonProps> = ({
-  primary,
-  basic,
+  variant = "default",
   icon,
   children,
   className = "",
+  role = "button",
   ...props
 }) => {
-  const linkStyles = getButtonStyles(primary, basic);
-
   return (
-    <a className={`${baseStyles} ${linkStyles} ${className}`} {...props}>
+    <a
+      className={getButtonClassName(variant, className)}
+      role={role}
+      {...props}
+    >
       {icon && <span className="mr-2">{icon}</span>}
       {children}
     </a>

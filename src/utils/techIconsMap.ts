@@ -19,6 +19,7 @@ import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 // Import custom SVG logos
 import TypeScriptLogo from "../assets/logos/typescript.svg";
+import ElectronIcon from "../assets/logos/Electron.svg";
 import ExpressLogo from "../assets/logos/express.svg";
 import NextJSLogo from "../assets/logos/nextjs.svg";
 import TailwindLogo from "../assets/logos/tailwind.svg";
@@ -44,6 +45,7 @@ import PostgreSQLIcon from "../assets/logos/PostgresSQL.svg";
 import FastifyIcon from "../assets/logos/Fastify.svg";
 import SupabaseIcon from "../assets/logos/supabase.svg";
 import SocketIoIcon from "../assets/logos/socket.io.svg";
+import PlaywriteIcon from "../assets/logos/Playwrite.svg";
 
 // Define the type for tech icon info
 export interface TechIconInfo {
@@ -88,6 +90,7 @@ export const techIconMap: Record<string, TechIconInfo> = {
 
   // Custom SVG icons
   Azure: azureIcon,
+  Electron: { icon: ElectronIcon, color: "text-current", isSVG: true },
   Express: { icon: ExpressLogo, color: "text-gray-600", isSVG: true },
   TypeScript: { icon: TypeScriptLogo, color: "text-blue-600", isSVG: true },
   "Next.js": { icon: NextJSLogo, color: "text-gray-800", isSVG: true },
@@ -96,6 +99,7 @@ export const techIconMap: Record<string, TechIconInfo> = {
   Railway: { icon: RailwayIcon, color: "text-current", isSVG: true },
   "Mantine UI": { icon: MantineIcon, color: "text-cyan-500", isSVG: true },
   Vite: { icon: ViteIcon, color: "text-current", isSVG: true },
+  Vitest: { icon: ViteIcon, color: "text-current", isSVG: true },
   D3: { icon: D3Icon, color: "text-current", isSVG: true },
   HeadlessUI: { icon: HeadlessUIIcon, color: "text-cyan-400", isSVG: true },
   "React-Query": { icon: ReactQueryIcon, color: "text-current", isSVG: true },
@@ -126,6 +130,7 @@ export const techIconMap: Record<string, TechIconInfo> = {
     color: "text-current",
     isSVG: true,
   },
+  Playwrite: { icon: PlaywriteIcon, color: "text-current", isSVG: true },
 };
 
 // Helper function to get icon info for a tech name

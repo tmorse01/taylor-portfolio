@@ -32,7 +32,7 @@ const Hero = () => {
                   textAlign="left"
                 />
               </div>
-              <div className="mx-auto max-w-[700px] text-xl md:text-2xl mt-4 text-gray-100">
+              <div className="mx-auto max-w-[700px] text-l md:text-xl mt-4 text-gray-100">
                 <FadeIn delay={300} duration={1200}>
                   <p className="mb-4">
                     Senior full stack developer specializing in React and
@@ -67,21 +67,21 @@ const Hero = () => {
                 showTooltip={true}
               />
             </div>
-            <div className="flex flex-col items-start space-y-4">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
               <LinkButton
-                primary
+                variant="primary"
                 href="/TaylorMorseResume.pdf"
                 target="_blank"
-                className="px-8 py-4 text-xl h-[52px] lg:px-12 lg:py-6 lg:text-2xl lg:h-[68px]"
+                className="w-full px-6 py-3 text-lg sm:w-auto md:px-7 md:py-3.5"
               >
                 View Resume
               </LinkButton>
               <ScrollLinkButton
-                basic
+                variant="secondary"
                 to="contact"
                 smooth={true}
                 duration={500}
-                className="px-8 py-4 text-xl h-[52px] lg:px-12 lg:py-6 lg:text-2xl lg:h-[68px]"
+                className="w-full px-6 py-3 text-lg sm:w-auto md:px-7 md:py-3.5"
               >
                 Contact Me
               </ScrollLinkButton>
