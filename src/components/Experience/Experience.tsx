@@ -16,7 +16,7 @@ const Experience = () => {
         />
 
         <div className="grid items-start gap-8 mx-auto sm:max-w-6xl lg:grid-cols-2">
-          <FadeContent duration={700} delay={100} threshold={0.1} blur>
+          <FadeContent duration={700} delay={50} threshold={0.1} blur>
             <div className="grid gap-4 p-6 transition-all bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg">
               <div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">
@@ -67,7 +67,7 @@ const Experience = () => {
             </div>
           </FadeContent>
 
-          <FadeContent duration={700} delay={200} threshold={0.1} blur>
+          <FadeContent duration={700} delay={100} threshold={0.1} blur>
             <div className="grid gap-4 p-6 transition-all bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg">
               <div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">
@@ -127,7 +127,7 @@ const Experience = () => {
             </div>
           </FadeContent>
 
-          <FadeContent duration={700} delay={300} threshold={0.1} blur>
+          <FadeContent duration={700} delay={150} threshold={0.1} blur>
             <div className="grid gap-4 p-6 transition-all bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg">
               <div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">
@@ -175,7 +175,7 @@ const Experience = () => {
             </div>
           </FadeContent>
 
-          <FadeContent duration={700} delay={400} threshold={0.1} blur>
+          <FadeContent duration={700} delay={200} threshold={0.1} blur>
             <div className="grid gap-4 p-6 transition-all bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg">
               <div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">
@@ -234,7 +234,7 @@ const Experience = () => {
             </div>
           </FadeContent>
 
-          <FadeContent duration={700} delay={500} threshold={0.1} blur>
+          <FadeContent duration={700} delay={250} threshold={0.1} blur>
             <div className="grid gap-4 p-6 transition-all bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg">
               <div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">
@@ -284,7 +284,7 @@ const Experience = () => {
             </div>
           </FadeContent>
 
-          <FadeContent duration={700} delay={600} threshold={0.1} blur>
+          <FadeContent duration={700} delay={300} threshold={0.1} blur>
             <div className="grid gap-4 p-6 transition-all bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg">
               <div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">
