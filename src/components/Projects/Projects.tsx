@@ -16,6 +16,21 @@ const Projects = () => {
         />
         <div className="grid items-stretch gap-10 mx-auto sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
           <ProjectCard
+            title="NavFlow"
+            description="An AI-assisted trip planner that turns natural-language requests into driving routes with relevant stops. Supports text and voice input, scores places along the route against extra-time budgets, previews multi-stop trips, and hands off to Google Maps for navigation."
+            technologies={[
+              "React",
+              "TypeScript",
+              "Fastify",
+              "Gemini",
+              "Google Maps API",
+              "Zod",
+              "PWA",
+            ]}
+            githubLinks={["https://github.com/tmorse01/navflow"]}
+            videoUrl="/demos/NavFlow.mp4"
+          />
+          <ProjectCard
             title="Rent vs Buy Dashboard"
             description="A comprehensive React web dashboard that helps users compare Rent vs Buy scenarios over time, using both cash-loss (unrecoverable costs) and net worth (balance-sheet) views. Features interactive scenario inputs, live-updating charts showing unrecoverable cost comparisons, net worth over time, and wealth breakdowns, key metrics including break-even calculations, and export functionality for scenarios and analysis packets."
             technologies={[
@@ -44,21 +59,6 @@ const Projects = () => {
             liveLink="https://disk-scope.netlify.app/"
             githubLinks={["https://github.com/tmorse01/disk-scope"]}
             videoUrl="/demos/DiskScope.mp4"
-          />
-          <ProjectCard
-            title="Chess App"
-            description="A fully-featured online chess application featuring real-time multiplayer gameplay, move validation, game history tracking, and an intuitive user interface. Built with a focus on clean code architecture and seamless user experience for chess enthusiasts."
-            technologies={[
-              "React",
-              "TypeScript",
-              "Express",
-              "Socket.io",
-              "Tailwind CSS",
-              "Railway",
-            ]}
-            liveLink="https://chess-app.up.railway.app/"
-            githubLinks={["https://github.com/tmorse01/chess"]}
-            videoUrl="/demos/Chess.mp4"
           />
           <ProjectCard
             title="Diff-Slides"

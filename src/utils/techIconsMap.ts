@@ -46,6 +46,9 @@ import FastifyIcon from "../assets/logos/Fastify.svg";
 import SupabaseIcon from "../assets/logos/supabase.svg";
 import SocketIoIcon from "../assets/logos/socket.io.svg";
 import PlaywriteIcon from "../assets/logos/Playwrite.svg";
+import GeminiIcon from "../assets/logos/gemini.svg";
+import ZodIcon from "../assets/logos/zod.svg";
+import PWAIcon from "../assets/logos/pwa.svg";
 
 // Define the type for tech icon info
 export interface TechIconInfo {
@@ -110,6 +113,9 @@ export const techIconMap: Record<string, TechIconInfo> = {
   },
   Netlify: { icon: NetlifyIcon, color: "text-current", isSVG: true },
   Fastify: { icon: FastifyIcon, color: "text-current", isSVG: true },
+  Gemini: { icon: GeminiIcon, color: "", isSVG: true },
+  Zod: { icon: ZodIcon, color: "", isSVG: true },
+  PWA: { icon: PWAIcon, color: "", isSVG: true },
   PostgreSQL: { icon: PostgreSQLIcon, color: "text-blue-600", isSVG: true },
   Prisma: { icon: PrismaIcon, color: "text-current", isSVG: true },
   Mongoose: { icon: MongoDbIcon, color: "text-current", isSVG: true },
